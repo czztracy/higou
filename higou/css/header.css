@@ -1,0 +1,197 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	padding:0;
+	margin:0;
+}
+body{background:#f2f2f2;}
+a{text-decoration:none;}
+li{list-style:none;}
+em{font-style: normal;}
+.topNav{width:100%;background:#f2f2f2;color:#666;border-bottom: 1px solid #ededed;}
+.topNavWrap{width:1090px;line-height:30px;font-size:12px;margin: 0 auto;height:30px;}
+.topNavWrap a{color: #666;}
+.topNavWrap a:hover{color: #E31436;}
+.topNavWrap a:hover{color: #E31436;}
+.topNavLeft1{float:left;}
+.topNavLeft1 .login{margin-left:16px;}
+.sep{color:#ccc; padding:0 10px;}
+.topNavLeft2 {float: left;padding-left:30px;}
+.topNavLeft2 .app{color: #E31436;position: relative;}
+.topNavLeft2 .app i{position: absolute;display: inline-block;width:8px;height:12px;left:-20px;top:-8px;}
+.topNavLeft2 .app .QRcode{position: absolute;left: -40px;top:35px;padding:5px 5px 0;background:#fff;text-align: center;color:#333;border:1px solid #ededed;cursor:pointer;
+	display: none;z-index: 150;}
+.topNavLeft2 .app:hover .QRcode{display: block;}
+.topNavLeft2 .app .QRcode .text{color: #E31436;font-size:14px;white-space: nowrap;line-height: 32px;margin-top:-12px;}
+.topNavRight{float: right;}
+.topNavRight ul{}
+.topNavRight ul li{float: left;}
+.topNavRight .mcDropmenBox{border: 1px solid transparent;left:-3px;top:-1px;height:29px;position: relative;}
+.topNavRight .mcDropmenBox i{position: absolute;right:14px;cursor: pointer;}
+.topNavRight .mcDropmenBox:hover i{transform: rotate(180deg);transition: all 0.5s;}
+.topNavRight .mcDropmenBox a{margin-right:5px;}
+.topNavRight .mcDropmenBox .mcDropmenu{position: absolute;border:1px solid rgba(0, 0, 0, 0.12);padding:4px 15px 14px 12px;left: -30px;background:#fff;z-index:100000;display: none;}
+.topNavRight .mcDropmenBox .mcDropmenu ul li{height:30px;width:88px;border-bottom:1px solid rgba(0, 0, 0, 0.12);}
+.topNavRight .mcDropmenBox .mcDropmenu ul .last{border:none;}
+.topNavRight .Dropmenuservice{border: 1px solid transparent;left:-3px;top:-1px;height:29px;position: relative;}
+.topNavRight .Dropmenuservice i{position: absolute;right:14px;cursor: pointer;}
+.topNavRight .Dropmenuservice:hover i{transform: rotate(180deg);transition:all 0.5s;}
+.topNavRight .Dropmenuservice a{margin-right:5px;}
+.topNavRight .Dropmenuservice .Dropmenuservicemenu{position: absolute;border:1px solid rgba(0, 0, 0, 0.12);padding:4px 15px 14px 12px;left: -30px;background:#fff;z-index:100000;display: none;}
+.topNavRight .Dropmenuservice .Dropmenuservicemenu .relation{position: relative;}
+.topNavRight .Dropmenuservice .Dropmenuservicemenu .relation em{position: absolute;font-style: normal;top:-2px;left:0;}
+.topNavRight .Dropmenuservice .Dropmenuservicemenu .relation a{padding-left:20px;}
+.topNavRight .Dropmenuservice .Dropmenuservicemenu .help em{position: absolute;font-style: normal;left:12px;bottom: 16px;}
+.topNavRight .Dropmenuservice .Dropmenuservicemenu .help a{padding-left:20px;}
+.topNavRight .Dropmenumore{border: 1px solid transparent;left:-3px;top:-1px;height:29px;position: relative;width:54px;}
+.topNavRight .Dropmenumore i{position: absolute;right:14px;cursor: pointer;}
+.topNavRight .Dropmenumore:hover i{transform: rotate(180deg);transition:all 0.5s;}
+.topNavRight .Dropmenumore a{margin-right:5px;}
+.topNavRight .Dropmenumore .more{position: absolute;border:1px solid rgba(0, 0, 0, 0.12);padding:4px 15px 14px 12px;left: -30px;background:#fff;z-index:100000;display: none;}
+.topNavRight .Dropmenumore .more ul .first{height:30px;width:88px;border-bottom:1px solid rgba(0, 0, 0, 0.12);}
+.topNavRight .Dropmenumore .more span{position: absolute;left:-120px;top:14px;display: none;z-index:200;}
+
+.headerCtner{color:#333;}
+.header{width:100%;position: relative;background: #fff;}
+.header .wraper{height:100px;position: relative;margin:0 auto;width: 1090px;}
+
+.header .wraper .logo{position: absolute;z-index: 9;left: 0;top:29px;cursor: pointer;z-index: 9;font-size: 42px; height: 43px; line-height: 45px;}
+.header .wraper a img{vertical-align: middle;display: inline-block;}
+.header .wraper .searchbar{position: absolute;right:130px;top:24px;}
+.header .wraper .searchbar .inner{width:405px;height:34px;padding-left:1px;background: #333;}
+.searchbar .wrap {float: left;margin:1px 0;padding:4px 5px 4px 30px;background:#fff;}
+.searchbar .wrap input{width:320px;height:24px;border:0;font-size:13px;outline: none;color: #999;}
+.searchbar .wrap p{position: absolute;left:4px;top:-1px;width: 30px;height:30px;background: url(../img/homeimages/icons.png) no-repeat;background-position:-456px -656px;}
+.searchbar #btn{position:relative;display: inline-block;height:34px;width:50px;font-size: 21px;line-height: 34px;color:#fff;text-align: center;border-radius: 0 3px 3px 0;cursor: pointer;}
+.searchbar #font{position: absolute;color: #999;top:9px;left:9px;}
+.searchbar #btn #font{color: #fff;right:0;font-size:24px;top:0;left:0;}
+.searchbar .hot{line-height: 22px;margin-top:2px;width:318px;height:22px;overflow: hidden;}	
+.searchbar .hot a{float: left;white-space: nowrap;color: #333;font-size: 12px;}
+.searchbar .hot .showcolor{color: #E31436;}
+.searchbar .hot a:hover{color: #E31436;}
+.shopcar{display: block;position: absolute;width:110px;height: 34px;background: #333;line-height: 34px;
+font-size:13px;text-align: center;border-radius: 3px;top:24px;right:0;color: #fff;}
+.shopcar .num{display: inline-block;width:20px;height:20px;border-radius: 50%;text-align: center;line-height: 20px;font-size:12px;font-weight:normal;color:#fff;white-space: nowrap;background: #E31436;font-family: Helvetica,arial;}
+.shopcar a{color:#fff;}
+#topTopBox{height:40px;border-bottom: 2px solid #333;background:#fff;position:relative;width:100%;margin:0 auto;}
+#topTab{position: relative;zoom:1;width: 1090px;margin:0 auto;height:40px;line-height: 40px;clear: both;}
+#funcTab{position: relative;height:40px;float: left;}
+#fixed{position: absolute;top:0;left: 20%;display: none;}
+#funcTab li{float: left;width: 110px;min-height:42px;}
+#funcTab li a{display: inline-block;padding:0 5px;text-align: center;font-size: 14px;color:#333;font-weight:800;}
+#funcTab .active a{color: #E31436;border-bottom: 4px solid #E31436;height:38px;;line-height: 38px;}
+#funcTab .navitm:hover a{color: #E31436;} 
+
+#funcTab #momBaby{position: relative;}
+#topTopBox #nav_menu{min-height:400px;position: absolute;width:1200px;z-index: 1000;top:42px;left:-110px;background:#fff;box-shadow: 0 3px 2px 2px rgba(0, 0, 2, 0.3);}
+#topTopBox #nav_menu #left{width:700px;float:left;padding:10px;}
+#topTopBox #nav_menu #left ul li{width:260px;padding:0px 10px;margin:0 30px;height: 33%}
+#topTopBox #nav_menu #left ul li a{color:#333;font-size: 14px;font-weight: 800;text-align: left;}
+#topTopBox #nav_menu #left ul li span{width:260px;display: block;border-bottom: #999 1px solid;}
+#topTopBox #nav_menu #left ul #box a{float: left;font-size:12px;font-weight: 100;}
+#topTopBox #nav_menu #left ul #box a:nth-child(1){color:#E31436;}
+#topTopBox #nav_menu #left ul #box a:nth-of-type(2){color:#E31436;}
+#topTopBox #nav_menu #left ul #box a:nth-of-type(3){color:#E31436;}
+#topTopBox #nav_menu #left ul #box a:nth-of-type(4){color:#E31436;}
+
+#topTopBox #nav_menu #right{float: left;width: 480px;}
+#topTopBox #nav_menu #right .bestseller{width:100px;text-align: center;float: left;}
+#topTopBox #nav_menu #right .bestseller p{width:80px;color:#333;font-size: 14px;font-weight: 800;margin-top:10px;}
+#topTopBox #nav_menu #right .bestseller a img{width: 100%;height:100%;border:1px solid #f2f2f2;}
+#topTopBox #nav_menu #right .prefecture{float: right;margin-top:36px;}
+
+
+#funcTab #makeup{position: relative;}
+#topTopBox #nav_Makeup{min-height:200px;position: absolute;width:1200px;z-index: 1000;top:42px;left:-220px;background:#fff;box-shadow: 0 3px 2px 2px rgba(0, 0, 2, 0.3);}
+#topTopBox #nav_Makeup .left{width:700px;float:left;padding:10px;}
+#topTopBox #nav_Makeup .left ul li{width:260px;padding:0px 10px;margin:0 30px;height: 33%}
+#topTopBox #nav_Makeup .left ul li a{color:#333;font-size: 14px;font-weight: 800;text-align: left;}
+#topTopBox #nav_Makeup .left ul li span{width:260px;display: block;border-bottom: #999 1px solid;}
+#topTopBox #nav_Makeup .right{float: left;width: 480px;}
+#topTopBox #nav_Makeup .right .bestseller{width:100px;text-align: center;float: left;}
+#topTopBox #nav_Makeup .right .bestseller p{width:80px;color:#333;font-size: 14px;font-weight: 800;margin-top:10px;}
+#topTopBox #nav_Makeup .right .bestseller a img{width: 100%;height:100%;border:1px solid #f2f2f2;}
+#topTopBox #nav_Makeup .right .prefecture{float: right;margin-top:36px;}
+
+#funcTab #HOME{position: relative;}
+#topTopBox #nav_Home{min-height:200px;position: absolute;width:1200px;z-index: 1000;top:42px;left:-330px;background:#fff;box-shadow: 0 3px 2px 2px rgba(0, 0, 2, 0.3);}
+#topTopBox #nav_Home .left{width:700px;float:left;padding:10px;}
+#topTopBox #nav_Home .left ul li{width:260px;padding:0px 10px;margin:0 30px;height: 33%}
+#topTopBox #nav_Home .left ul li a{color:#333;font-size: 14px;font-weight: 800;text-align: left;}
+#topTopBox #nav_Home .left ul li span{width:260px;display: block;border-bottom: #999 1px solid;}
+#topTopBox #nav_Home .right{float: left;width: 480px;}
+#topTopBox #nav_Home .right .bestseller{width:100px;text-align: center;float: left;}
+#topTopBox #nav_Home .right .bestseller p{width:80px;color:#333;font-size: 14px;font-weight: 800;margin-top:10px;}
+#topTopBox #nav_Home .right .bestseller a img{width: 100%;height:100%;border:1px solid #f2f2f2;}
+#topTopBox #nav_Home .right .prefecture{float: right;margin-top:36px;}
+
+#funcTab #Health{position: relative;}
+#topTopBox #nav_Health{min-height:200px;position: absolute;width:1200px;z-index: 1000;top:42px;left:-440px;background:#fff;box-shadow: 0 3px 2px 2px rgba(0, 0, 2, 0.3);}
+#topTopBox #nav_Health .left{width:700px;float:left;padding:10px;}
+#topTopBox #nav_Health .left ul li{width:260px;padding:0px 10px;margin:0 30px;height: 33%}
+#topTopBox #nav_Health .left ul li a{color:#333;font-size: 14px;font-weight: 800;text-align: left;}
+#topTopBox #nav_Health .left ul li span{width:260px;display: block;border-bottom: #999 1px solid;}
+#topTopBox #nav_Health .right{float: left;width: 480px;}
+#topTopBox #nav_Health .right .bestseller{width:100px;text-align: center;float: left;}
+#topTopBox #nav_Health .right .bestseller p{width:80px;color:#333;font-size: 14px;font-weight: 800;margin-top:10px;}
+#topTopBox #nav_Health .right .bestseller a img{width: 100%;height:100%;border:1px solid #f2f2f2;}
+#topTopBox #nav_Health .right .prefecture{float: right;margin-top:36px;}
+
+
+#funcTab #costume{position: relative;}
+#topTopBox #nav_Costume{min-height:200px;position: absolute;width:1200px;z-index: 1000;top:42px;left:-440px;background:#fff;box-shadow: 0 3px 2px 2px rgba(0, 0, 2, 0.3);}
+#topTopBox #nav_Costume .left{width:700px;float:left;padding:10px;}
+#topTopBox #nav_Costume .left ul li{width:260px;padding:0px 10px;margin:0 30px;height: 33%}
+#topTopBox #nav_Costume .left ul li a{color:#333;font-size: 14px;font-weight: 800;text-align: left;}
+#topTopBox #nav_Costume .left ul li span{width:260px;display: block;border-bottom: #999 1px solid;}
+#topTopBox #nav_Costume .right{float: left;width: 480px;}
+#topTopBox #nav_Costume .right .bestseller{width:100px;text-align: center;float: left;}
+#topTopBox #nav_Costume .right .bestseller p{width:80px;color:#333;font-size: 14px;font-weight: 800;margin-top:10px;}
+#topTopBox #nav_Costume .right .bestseller a img{width: 100%;height:100%;border:1px solid #f2f2f2;}
+#topTopBox #nav_Costume .right .prefecture{float: right;margin-top:36px;}
+
+#funcTab #round{position: relative;}
+#topTopBox #nav_Round{min-height:200px;position: absolute;width:1200px;z-index: 1000;top:42px;left:-550px;background:#fff;box-shadow: 0 3px 2px 2px rgba(0, 0, 2, 0.3);}
+#topTopBox #nav_Round .left{width:700px;float:left;padding:10px;}
+#topTopBox #nav_Round .left ul li{width:260px;padding:0px 10px;margin:0 30px;height: 33%}
+#topTopBox #nav_Round .left ul li a{color:#333;font-size: 14px;font-weight: 800;text-align: left;}
+#topTopBox #nav_Round .left ul li span{width:260px;display: block;border-bottom: #999 1px solid;}
+#topTopBox #nav_Round .right{float: left;width: 480px;}
+#topTopBox #nav_Round .right .bestseller{width:100px;text-align: center;float: left;}
+#topTopBox #nav_Round .right .bestseller p{width:80px;color:#333;font-size: 14px;font-weight: 800;margin-top:10px;}
+#topTopBox #nav_Round .right .bestseller a img{width: 100%;height:100%;border:1px solid #f2f2f2;}
+#topTopBox #nav_Round .right .prefecture{float: right;margin-top:36px;}
+
+#funcTab #costume{position: relative;}
+#topTopBox #nav_Costume{min-height:200px;position: absolute;width:1200px;z-index: 1000;top:42px;left:-660px;background:#fff;box-shadow: 0 3px 2px 2px rgba(0, 0, 2, 0.3);}
+#topTopBox #nav_Costume .left{width:700px;float:left;padding:10px;}
+#topTopBox #nav_Costume .left ul li{width:260px;padding:0px 10px;margin:0 30px;height: 33%}
+#topTopBox #nav_Costume .left ul li a{color:#333;font-size: 14px;font-weight: 800;text-align: left;}
+#topTopBox #nav_Costume .left ul li span{width:260px;display: block;border-bottom: #999 1px solid;}
+#topTopBox #nav_Costume .right{float: left;width: 480px;}
+#topTopBox #nav_Costume .right .bestseller{width:100px;text-align: center;float: left;}
+#topTopBox #nav_Costume .right .bestseller p{width:80px;color:#333;font-size: 14px;font-weight: 800;margin-top:10px;}
+#topTopBox #nav_Costume .right .bestseller a img{width: 100%;height:100%;border:1px solid #f2f2f2;}
+#topTopBox #nav_Costume .right .prefecture{float: right;margin-top:36px;}
+
+#funcTab #Appliances{position: relative;}
+#topTopBox #nav_Appliances{min-height:200px;position: absolute;width:1200px;z-index: 1000;top:42px;left:-770px;background:#fff;box-shadow: 0 3px 2px 2px rgba(0, 0, 2, 0.3);}
+#topTopBox #nav_Appliances .left{width:700px;float:left;padding:10px;}
+#topTopBox #nav_Appliances .left ul li{width:260px;padding:0px 10px;margin:0 30px;height: 33%}
+#topTopBox #nav_Appliances .left ul li a{color:#333;font-size: 14px;font-weight: 800;text-align: left;}
+#topTopBox #nav_Appliances .left ul li span{width:260px;display: block;border-bottom: #999 1px solid;}
+#topTopBox #nav_Appliances .right{float: left;width: 480px;}
+#topTopBox #nav_Appliances .right .bestseller{width:100px;text-align: center;float: left;}
+#topTopBox #nav_Appliances .right .bestseller p{width:80px;color:#333;font-size: 14px;font-weight: 800;margin-top:10px;}
+#topTopBox #nav_Appliances .right .bestseller a img{width: 100%;height:100%;border:1px solid #f2f2f2;}
+#topTopBox #nav_Appliances .right .prefecture{float: right;margin-top:36px;}
+
+#funcTab #Overseas{position: relative;}
+#topTopBox #nav_Overseas{min-height:200px;position: absolute;width:1200px;z-index: 1000;top:42px;left:-880px;background:#fff;box-shadow: 0 3px 2px 2px rgba(0, 0, 2, 0.3);}
+#topTopBox #nav_Overseas .left{width:700px;float:left;padding:10px;}
+#topTopBox #nav_Overseas .left ul li{width:260px;padding:0px 10px;margin:0 30px;height: 33%}
+#topTopBox #nav_Overseas .left ul li a{color:#333;font-size: 14px;font-weight: 800;text-align: left;}
+#topTopBox #nav_Overseas .left ul li span{width:260px;display: block;border-bottom: #999 1px solid;}
+#topTopBox #nav_Overseas .right{float: left;width: 480px;}
+#topTopBox #nav_Overseas .right .bestseller{width:100px;text-align: center;float: left;}
+#topTopBox #nav_Overseas .right .bestseller p{width:80px;color:#333;font-size: 14px;font-weight: 800;margin-top:10px;}
+#topTopBox #nav_Overseas .right .bestseller a img{width: 100%;height:100%;border:1px solid #f2f2f2;}
+#topTopBox #nav_Overseas .right .prefecture{float: right;margin-top:36px;}

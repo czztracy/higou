@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="../css/shopcar.css" />
+	<link rel="stylesheet" type="text/css" href="../css/header.css" />
+	<link rel="stylesheet" type="text/css" href="../css/docfoot.css" />
+	<link rel="stylesheet" type="text/css" href="../icon-font/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="../icon-font/iconfont/iconfont.css">
+ 	<link rel="stylesheet" type="text/css" href="../icon-font/iconsousuo/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="../icon-font/iconfont2/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="../icon-font/iconfont3/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="../icon-font/iconfont4/iconfont.css">
+	<script type="text/javascript" src = "../js/jquery-1.11.1.js"></script>
+	<script type="text/javascript" src = "../js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src = "../js/shopcar.js"></script>
+	<script type="text/javascript" src = "../js/public.js"></script>
+	<script type="text/javascript" src = "../js/jquery.cookie.js"></script>
+</head>
+<body>
+<div class="box">
+	<div class="topNav">
+		<div class="topNavWrap">
+			<div class="topNavLeft1">
+				嗨购higou欢迎您！
+				<a href="login.html" class="login">登陆</a>
+				<span class="sep">|</span>
+				<a href="register.html">免费注册</a>
+			</div>
+			<div class="topNavLeft2">
+				<a href="#" class="app">
+					<i class="iconfont icon-shouji">&nbsp;</i>
+					手机嗨购
+					<span class="QRcode">
+						<img src="../img/homeimages/QRlogo.jpg">
+						<p class="text">APP首单立减8元</p>
+					</span>
+				</a>
+			</div>
+			<div class="topNavRight">
+				<ul>
+					<li>
+						<a href="login.html">我的订单</a>
+						<span class="sep">|</span>
+					</li>
+					<li class="dropmenupersonal">
+						<div class="mcDropmenBox" id="mcDropmenBox">
+							<a href="#">个人中心</a>
+							<i class="iconfont icon-arrLeft-fill" id="fontsize"></i>
+							<span class="sep">|</span>
+							<div class="mcDropmenu" id = "mcDropmenu">
+								<ul>
+									<li>
+										<a href="#">我的优惠券</a>
+									</li>
+									<li>
+										<a href="#">我的积分</a>	
+									</li>
+									<li>
+										<a href="#">账户安全</a>	
+									</li>
+									<li class="last">
+										<a href="#">我收藏的商品</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="dropmenuservice">
+						<div class="Dropmenuservice" id = "Dropmenuservice">
+							<a href="#">客户服务</a>
+							<i class="iconfont icon-arrLeft-fill" id="fontsize"></i>
+							<span class="sep">|</span>
+							<div class="Dropmenuservicemenu" id="Dropmenuservicemenu">
+								<ul>
+									<li class="relation">
+										<em class="iconfont icon-icon-test"></em>
+										<a href="#">联系客服</a>
+									</li>
+									<li class="help">
+										<em class="iconfont icon-bangzhuzhongxin"></em>
+										<a href="#">帮助中心</a>
+									</li>
+									
+								</ul>
+							</div>
+						</div>						
+					</li>
+					<li>
+						<a href="#">消费者告知书</a>
+						<span class="sep">|</span>
+					</li>
+					<li class="dropmenumore">
+						<div class="Dropmenumore" id="Dropmenumore">
+							<a href="#">更多</a>
+							<i class="iconfont icon-arrLeft-fill" id="fontsize"></i>
+							<div class="more" id="more">
+								<ul id="ul1">
+									<li class="first">
+										<a href="#">收藏本站</a>
+									</li>
+									<li>
+										<a href="#">新浪微博</a>
+										<span>
+											<img src="../img/homeimages/QRcode1.jpg">
+										</span>
+									</li>
+									<li>
+										<a href="#">微信公众号</a>
+										<span>
+											<img src="../img/homeimages/QRcode2.jpg">
+										</span>
+									</li>
+									<li>
+										<a href="#">higoucc公众号</a>
+										<span>
+											<img src="../img/homeimages/QRcode3.jpg">
+										</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						
+					</li>
+				</ul>
+			</div>
+		</div>		
+	</div>
+	<div id="header">
+		<div class="wraper">
+			<a class="logo" href="#">
+				<img src="../img/shopcar/logo.gif">
+			</a>
+			<ol class="step fr">
+				<li>
+					<strong>
+						<span>我的购物车</span>
+					</strong>
+				</li>
+				<li>
+					<strong>
+						<span>核对订单</span>
+					</strong>
+				</li>
+				<li>
+					<strong>
+						<span>支付、完成</span>
+					</strong>
+				</li>
+			</ol>
+		</div>
+	</div>
+	<div id="main" class="wraper">
+		<div class="checkout">
+			<div id="shoppingCartPannelMain" style="position:relative">
+				<div class="shoppingCartPannel">
+					<div class="tipmsg tipmsg_cart mb10">
+						<form id="formCart" name="formCart" method="post">
+							<div class="cartlist_cpt cartlist_cpt_type1 mt15">
+								<table id="js_table" class="table">
+									<tbody>
+										<tr>
+											<th class="title first" width-"496" align="left">商品名称</th>
+											<th width="123" align="left">单价</th>
+											<th width="165" align="left">购买单价数量</th>
+											<th width="100" align="left">小计</th>
+											<th class="last" align="left">操作</th>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="cartlist box">
+								<div class="seller">
+									<label class="icon">国内仓库</label>
+								</div>
+								<table class="table table_con" cellpadding="0" cellspacing="0" id="table_Box"></table>
+						</form>
+						<div class="checkout_action">
+							<div class="m_total">
+								<div class="fl">
+									<a class="btn_clear" title="删除选中商品" href="communal.html" style="margin-left:10px">继续购物</a>
+									<a class="btn_clear" title="清空购物车" href="#">清空购物车</a>
+								</div>
+								<div class="fr">
+									<p class="allgoods">
+										<span>共商品
+											<i id="selectedCount">0</i>件
+										</span>
+										<span class="itm">总价（不含运费）:
+											<i id="totalSkuPrice">
+												<em>￥</em>0.00
+											</i>
+										</span>
+									</p>
+									<p class="allmoney">
+										<span>活动优惠:
+											<i id="totalRePrice"></i>
+										</span>
+										<span class="itm">
+											商品应付总计:
+											<i id="totalSkuPrice02">
+												<em>￥</em>0.00
+											</i>
+										</span>
+										<span class="itm">订单税费:
+											<span id="totalSkurate">
+												<em>￥</em>0.00
+											</span>
+										</span>
+										<a class="btn_checkout" href="#" id="toSettlement2">确认订单</a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="blank10"></div>
+		<div class="other_prolist picscroll_left">
+			<div class="hd">
+				<h2>猜你喜欢</h2>
+				<span>根据你的浏览记录推荐商品</span>
+				<a href="#" class="next">
+					<i></i>换一批
+				</a>
+			</div>
+			<div class="bd">
+				<ul></ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="docfoot">
+		<div class="footWrap">
+			<div id="btmList">
+				<ul>
+					<li>
+						<i class="one"></i>
+						<p>100%正品</p>
+						<span>全球精选 正品保证</span>
+					</li>
+					<li>
+						<i class="two"></i>
+						<p>100%正品</p>
+						<span>全球精选 正品保证</span>
+					</li>
+					<li>
+						<i class="three"></i>
+						<p>100%正品</p>
+						<span>全球精选 正品保证</span>
+					</li>
+					<li>
+						<i class="four"></i>
+						<p>100%正品</p>
+						<span>全球精选 正品保证</span>
+					</li>
+				</ul>
+			</div>
+			<div id="guideList">
+				<ul>
+					<li class="first">
+						<a href="http://www.higou.cc/">
+							<img src="../img/homeimages/logo.gif" width="194">
+						</a>
+						<div class="focuson">
+							<span>关注我们</span>
+							<a href="http://weibo.com/i/2622417754" target="_blank" class="backg1"></a>
+							<a href="#" target="_blank" class="backg2"></a>
+							<a href="#" target="_blank" class="backg3"></a>
+						</div>
+					</li>
+					<li>
+						<dl>
+							<dt>新手上路</dt>
+							<dd>
+								<a href="#">售后流程</a>
+							</dd>
+							<dd>
+								<a href="#">购物流程</a>
+							</dd>
+							<dd>
+								<a href="#">订购方式</a>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>手机常识</dt>
+							<dd>
+								<a href="#">如何分辨原装电池</a>
+							</dd>
+							<dd>
+								<a href="#">如何分辨水货手机</a>
+							</dd>
+							<dd>
+								<a href="#">如何享受全国联保</a>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>配送与支付</dt>
+							<dd>
+								<a href="#">货到付款区域</a>
+							</dd>
+							<dd>
+								<a href="#">配送支付</a>
+							</dd>
+							<dd>
+								<a href="#">支付方式说明</a>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>会员中心</dt>
+							<dd>
+								<a href="#">资金管理</a>
+							</dd>
+							<dd>
+								<a href="#">我的收藏</a>
+							</dd>
+							<dd>
+								<a href="#">我的订单</a>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>服务保证</dt>
+							<dd>
+								<a href="#">退换货原则</a>
+							</dd>
+							<dd>
+								<a href="#">售后服务保证</a>
+							</dd>
+							<dd>
+								<a href="#">产品质量保证</a>
+							</dd>
+						</dl>
+					</li>
+					<li class="item">
+						<a href="#">
+							<img src="../img/homeimages/icon.jpg" width="108px" height="108px"> 
+							<span>higou.cc</span>
+						</a>
+					</li>
+					<li class="item">
+						<a href="#">
+							<img src="../img/homeimages/QRlogo.jpg" width="108px" height="108px"> 
+							<span>扫描下载手机版</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="WRAP">
+			<div class="aboutNEST">
+				<a href="#" target="_blank">免责条款</a>
+				<em> - </em>
+				<a href="#" target="_blank">隐私保护</a>
+				<em> - </em>
+				<a href="#" target="_blank">咨询热线</a>
+				<em> - </em>
+				<a href="#" target="_blank">联系我们</a>
+				<em> - </em>
+				<a href="#" target="_blank">公司简介</a>
+				<em> - </em>
+				<a href="#" target="_blank">批发方案</a>
+				<em> - </em>
+				<a href="#" target="_blank">配送方式</a>
+				<br />
+				<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010002000066" target="_blank">
+					<img src="../img/homeimages/smallicon.jpg">
+				</a>
+				<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010002000066" target="_blank">
+					<span style="margin: 0px 0px 0px 5px;">粤ICP备16033297号-2</span>
+				</a>
+				<span style="margin-left:20px;">&copy;2005-2017 嗨购 hihou 深圳达悦科技有限公司 版权所有，并保留所有权利。</span><br />
+				<a href="#" target="_blank" class="KXYZ">
+					<img src="../img/homeimages/icon1.png">
+				</a>
+				<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010002000066" target="_blank" class="shield">
+					<img src="../img/homeimages/samllicon.jpg">
+				</a>
+			</div>
+		</div>
+		<div class="floatFunc" id="floatFunc">
+			<a href="#" id="shoppingcar">
+				<i id="CAR"></i><br />
+				<span class="Cart">购物车</span>
+			</a>
+			<a href="#" id="oIphone">
+				<i id="Iphone"></i><br />
+				<span class="Cart">APP</span>
+			</a>
+			<a href="#" id="GOTOP">
+				<i id="arrLeft"></i><br/>
+			</a>
+			<div class="CODE" id="CODE">
+				<img src="../img/homeimages/code1.png">	
+			</div>
+		</div>
+</div>
+</body>
+</html>

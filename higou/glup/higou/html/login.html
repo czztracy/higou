@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src = "../js/jquery-1.11.1.js"></script>
+	<script type="text/javascript" src = "../js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src = "../js/login.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/login.css">
+</head>
+<body>
+	<div id="header">
+		<div class="wraper clearfix">
+			<h1 class="fl">
+				<a href="communal.html">
+					<img src="../img/login/logo.gif">
+				</a>
+			</h1>
+			<div class="fr">
+				<img src="../img/login/image.png">
+			</div>
+		</div>
+	</div>
+	<div class="login_banner">
+		<div class="banner">
+			<a href="#"></a>
+		</div>
+		<div class="login_box">
+			<form name="formLogin" method="post">
+				<h2 class="clearfix">
+					<span>登录账号</span>
+					<a href="register.html">免费注册</a>
+				</h2>
+				<ul class="form_list">
+					<li class="item">
+						<div class="import">
+							<span class="icon"></span>
+							<label for="login_01" id="one">用户名</label>
+							<input type="text" name="uesrname" class="intxt" id="login_01" />
+						</div>
+					</li>
+					<li class="item password">
+						<div class="import">
+							<span class="icon"></span>
+							<label for="login_02" id="two">密码</label>
+							<input type="text" name="uesrname" class="intxt" id="login_02" />
+						</div>
+					</li>
+					<li class="auto">
+						<div class="import clearfix">
+							<label class="fl" id="Sp">
+								<input type="checkbox" class="checkbox" name="remember">
+								<span></span>
+								请保存我这次的登录信息。
+							</label>
+							<em class="fr">
+								<a href="#">忘记密码？</a>
+							</em>
+						</div>
+					</li>
+					<li class="sub">
+						<input type="hidden" name="act" value="act_login">
+						<input type="hidden" name="back_act" value="http://higou.cc/">
+						<input type="submit" class="login_sub" value="登录" tabindex="8">
+					</li>
+				</ul>
+				<ul class="thirdpart clearfix">
+					<li class="zfb">
+						<a href="#">
+							<i></i>
+							<span>支付宝登录</span>
+						</a>
+					</li>
+					<li class="wb">
+						<a href="#">
+							<i></i>
+							<span>微博登录</span>
+						</a>	
+					</li>
+					<li class="qq">
+						<a href="#">
+							<i></i>
+							<span>QQ登录</span>
+						</a>	
+					</li>
+				</ul>
+			</form>
+		</div>
+	</div>
+	<div id="about">
+		<a href="#">
+		免责条款
+			<em>-</em>
+		</a>
+		<a href="#">
+		隐私保护
+			<em>-</em>
+		</a>
+		<a href="#">
+		咨询热线
+			<em>-</em>
+		</a>
+		<a href="#">
+		联系我们
+			<em>-</em>
+		</a>
+		<a href="#">
+		公司简介
+			<em>-</em>
+		</a>
+		<a href="#">
+		批发方案
+			<em>-</em>
+		</a>
+		<a href="#">
+		配送方式
+		</a>
+		<br />
+		<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010002000066">
+			<img src="../img/login/ga.png">
+		</a>
+		<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010002000066" target="_blank">
+			<span style="margin:0px 0px 0px 5px">粤ICP备16033297号-2</span>
+		</a>
+		<span class="m-license">&copy;嗨购 higou 深圳达悦科技有限公司 版权所有，并保留所有权限。</span>
+		<div class="f-tac">
+			<span id="KXYZ">
+				<a href="#" id="kx_verify" tabindex="1" target="_blank" style="display:inline-block">
+					<img src="../img/login/d720d83b55a04b6f932ea845c673c5bf.png" alt="可信网站">
+				</a>
+			</span>
+			<a class="u-shield" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010002000066" target="_blank">
+				<img src="../img/login/db9ba5060e9e49fabf3f6cc4b8b6ccf7.jpg" alt="工商营业执照网上标识">
+			</a>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {margin: 0;padding: 0;}
+html,body{margin:0 auto;font-family: "microsoft yahei",tahoma,arial,\5b8b\4f53;font-size:12px;line-height: 1.5;color:#848484;background: #f5f5f5;cursor: default;background: #fff;}
+a{color:#333;text-decoration: none;}
+img,input{vertical-align: middle;display: inline-block;}
+img{border:0;}
+li{list-style-type:none;}
+input{font-size:12px;margin:0;color:#848484;line-height: 1.5;}
+#header{height:auto;border-bottom: 1px solid #e8e8e8;width: 100%;position: relative;z-index: 90;background:#fff;overflow: hidden;box-shadow: 0 3px 30px 0px rgba(0, 0, 2, 0.3);}
+#header .wraper{position: relative;background: #fff;margin:0 auto;width: 1000px;}
+.clearfix{clear: both;}
+#header .wraper h1{padding-top:29px;font-weight: normal;font-size: 14px;}
+.fl{float: left;display: inline;}
+.fr{float: right;display: inline;}
+#about{padding:0;background:none;color:#c2c2c2;line-height: 26px;text-align: center;}
+#about a{font-size: 14px;color:#666;display: inline-block;vertical-align: middle;}
+#about em{font-style: normal;width: 1px;height: 13px;background:#b77d66;overflow: hidden;display: inline-block;vertical-align: middle;margin:0 20px;font-weight: 500;}
+a img{cursor: pointer;}
+.m-license{margin-left:20px;}
+.f-tac{text-align: center;}
+#KXYZ img{margin-top: 5px;border-radius: 5px;width: 80px;height: 30px;}
+.u-shield img{height:30px;margin:5px 0 0 10px;}
+
+#main{background:url(../img/register/user_bj.jpg);position: relative;padding-bottom: 20px;}
+.main_t_ty, .main_b_ty{position: absolute;left: 0;right: 0;top: 0;height:5px;background:url(../img/register/user_ty.png) center 0 repeat-x;}
+.main_b_ty{top:auto;bottom: 0;background-position: center -5px;}
+.wraper{width: 1000px;margin-right: auto;margin-left: auto;}
+.register_box{padding:30px 0 0;margin-bottom: -20px;position: relative;}
+.clearfix{clear: both;}
+.user_main_box{padding-right:270px;}
+.user_main_box .hd ul{overflow: hidden;}
+.user_main_box .hd ul li.on{padding-top:0;border-top: 3px solid #69b3f2;background:rgba(255, 255, 255, 0.85);line-height: 52px;}
+.user_main_box .hd li{width: 190px;height:47px;text-align: center;font-size: 22px;color:#333;float: left;cursor: pointer;}
+li{list-style: none;}
+.user_main_box .bd_box{padding:60px 0 60px 165px;background:rgba(255, 255, 255, .85);}
+.mt10{margin-top:10px;}
+.reg{margin:0 auto;background: #fff;}
+.user_main_box .bd_box .reg{background: none;overflow: hidden;}
+.reg .left{float: left;width: 585px;margin-right: -1px;border-right:1px solid #c9c9c9;}
+.user_main_box .bd_box .reg .left{width: auto;float: none;border:0;}
+.login-form{width: 353px;height:318px;padding:50px;border-left: 1px solid #c9c9c9;float: right;}
+.reg-form{float: none;border:0;width: 485px;height:372px;}
+.user_main_box .bd_box .reg-form{padding:0;width: auto;}
+
+.login-form .c ul{line-height: 26px;padding-top:0px;}
+.login-form .c ul li .intxt{width: 235px;padding:18px 20px 18px 96px;border:1px solid #dedede;font-size: 14px;background-color: #fff;vertical-align: middle;}
+.user_main_box .bd_box .login-form .c ul li{width: auto;float: left;clear: both;padding:2px;height: auto;margin: 0 0 30px;position: relative;}
+.login-form .c ul li label{position: absolute;z-index: 2;line-height: 1.5;font-size: 14px;top:16px;left: 20px;}
+.user_main_box .bd_box .login-form .c ul li label{cursor: text;left: 13px;top:12px;font-size: 20px;color:#c1c1c1;}
+.user_main_box .bd_box .login-form .c ul li .intxt{padding:0 10px;border:1px solid #e6e6e6;height:48px;line-height: 48px;width: 378px;font-size:20px;color:#333;box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;}
+.reg-form .error{position: absolute;left: 350px;top:16px;width: 133px;background: url(../img/register/error.png) 2px 1px no-repeat;margin-left:10px;display: inline-block;line-height: 1.5;padding:0 0 0 22px;zoom:1;}
+.error{color:#f00;}
+.user_main_box .bd_box .reg-form .error{margin: 0;white-space: nowrap;width: auto;top: 56px;left: 0;}
+div{text-align: left;}
+.cls:after { content: "";font-size: 0; display: block;height: 0; clear: both;visibility: hidden;}
+.user_main_box .bd_box .login-form .c ul li.inputsub{margin-bottom: 20px;}
+.user_main_box .bd_box .login-form .c ul li.inputsub .btn_reg{display: block;width: 400px;height:50px;line-height: 50px;border:none;overflow: hidden;text-align: center;background:#69b3f2;font-size:26px;color:#fff;cursor: pointer;border-radius: 2px;}
+.reg-form .c ul li.read-me{height:40px;float: none;clear: both;}
+.user_main_box .bd_box .login-form .c ul li.read-me label{position: static;font-size:12px;color:#949494;white-space: nowrap;}
+.user_main_box .bd_box .login-form .c ul li.read-me a{color:#406eba;}
+.user_main_box .bd_box .login-form .c ul li.read-me a:hover{color:orange;}
+
+.tabbdad{position: absolute;right:0;top:80px;bottom: 0;width: 270px;background: #f5f5f5;}
+.tabbdad .text{text-align: center;position: absolute;top:49%;left: 0;right: 0;}
+.tabbdad .text a:hover{color:orange;}
+
+    
+   
+    
+   
+    
+

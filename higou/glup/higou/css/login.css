@@ -1,0 +1,57 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {margin: 0;padding: 0;}
+html,body{margin:0 auto;font-family: "microsoft yahei",tahoma,arial,\5b8b\4f53;font-size:12px;line-height: 1.5;color:#848484;background: #f5f5f5;cursor: default;background: #fff;}
+a{color:#333;text-decoration: none;}
+img,input{vertical-align: middle;display: inline-block;}
+img{border:0;}
+li{list-style-type:none;}
+input{font-size:12px;margin:0;color:#848484;line-height: 1.5;float: none;outline: none;}
+#header{height:auto;border-bottom: 1px solid #e8e8e8;width: 100%;position: relative;z-index: 90;background:#fff;overflow: hidden;box-shadow: 0 3px 30px 0px rgba(0, 0, 2, 0.3);}
+#header .wraper{position: relative;background: #fff;margin:0 auto;width: 1000px;}
+.clearfix{clear: both;}
+#header .wraper h1{padding-top:29px;font-weight: normal;font-size: 14px;}
+.fl{float: left;display: inline;}
+.fr{float: right;display: inline;}
+
+.login_banner{position:relative;margin-bottom: 40px;}
+.login_banner .banner{height:520px;}
+.login_banner .banner a{background:url(../img/login/bg.jpg) center no-repeat;position: absolute;bottom:0;top: 0;left: 0;width: 100%;}
+
+.login_box{position: absolute;top:80px;right:50%;margin-right:-545px;width: 350px;border:1px solid #eaeaea;background: #fff;}
+.login_box h2{padding:27px 40px 10px;line-height: 24px;font-weight: normal;overflow: hidden;}
+.login_box h2 span{float: left;font-size:18px;color:#333;font-weight: 700;}
+.login_box h2 a{float: right;font-size: 14px;}
+
+.form_list{padding:0 40px 55px;display: block;}
+div{text-align: left;}
+.form_list .import{margin:10px 0 0;position: relative;padding:2px;border:1px solid #ddd;font-size:14px;height:26px;}
+.form_list .import .icon{width: 18px;height:18px;position: absolute;top:6px;left: 9px;background:url(../img/login/user_icon.png) no-repeat;}
+.form_list .import label{position: absolute;top:7px;left: 47px;line-height: 18px;cursor: text;}
+.form_list .import .intxt{border:0;border-left: 1px solid #ddd;background:none;margin-left: 34px;height:18px;padding: 4px 10px;width: 209px;color:#333;font-size: 14px;}
+.form_list .password .import .icon{background-position: 0 -20px;}
+.form_list .auto .import{border:0; margin: 17px 0 0 0;padding:0;font-size:12px;height:auto;}
+.form_list .auto .import label{position: static;cursor: pointer;overflow: hidden;color:#333;}
+.form_list .auto .import label input{float: left;display: none;}
+.form_list .auto .import label span{float: left;width: 15px;height: 15px;margin: 1px 5px 0 0;background:url(../img/login/user_icon.png) no-repeat 0 -60px;}
+em{font-style: normal;}
+.form_list .auto .import label.cur span{background-position: 0 -78px;}
+.form_list .auto .import .fr a{font-size:12px;}
+.form_list .login_sub{margin-top:17px;display: inline-block;width: 270px;height:40px;background:rgb(227, 20, 54);font-size: 18px;line-height: 40px;color:rgb(255, 255, 255);text-align: center;cursor: pointer;border-width: 0px;outline: 0px;}
+
+.thirdpart{border-top:1px solid #eaeaea;padding:10px 0;overflow: hidden;}
+.thirdpart li{width: 104px;float: left;line-height: 22px;height:22px;overflow: hidden;text-align: center;}
+.thirdpart li.zfb{width: 130px;}
+.thirdpart li a{display: inline-block;color:#333;}
+.thirdpart li.zfb i{background-position: 0 -150px;}
+.thirdpart li i{width: 22px;height:22px;margin-right: 6px;float: left;background:url(../img/login/user_icon.png) no-repeat;}
+.thirdpart li.wb{border:solid #eaeaea;border-width: 0 1px;}
+.thirdpart li.wb i{background-position: 0 -100px;}
+.thirdpart li.qq i{background-position: 0 -125px;}
+
+#about{padding:0;background:none;color:#c2c2c2;line-height: 26px;text-align: center;}
+#about a{font-size: 14px;color:#666;display: inline-block;vertical-align: middle;}
+#about em{font-style: normal;width: 1px;height: 13px;background:#b77d66;overflow: hidden;display: inline-block;vertical-align: middle;margin:0 20px;font-weight: 500;}
+a img{cursor: pointer;}
+.m-license{margin-left:20px;}
+.f-tac{text-align: center;}
+#KXYZ img{margin-top: 5px;border-radius: 5px;width: 80px;height: 30px;}
+.u-shield img{height:30px;margin:5px 0 0 10px;}

@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="../css/header.css" />
+	<link rel="stylesheet" type="text/css" href="../css/secondarypage.css" />
+	<link rel="stylesheet" type="text/css" href="../icon-font/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="../css/docfoot.css" />
+	<link rel="stylesheet" type="text/css" href="../icon-font/iconfont/iconfont.css">
+ 	<link rel="stylesheet" type="text/css" href="../icon-font/iconsousuo/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="../icon-font/iconfont2/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="../icon-font/iconfont3/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="../icon-font/iconfont4/iconfont.css">
+	<script type="text/javascript" src = "../js/jquery-1.11.1.js"></script>
+	<script type="text/javascript" src = "../js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src = "../js/public.js"></script>
+	<script type="text/javascript" src = "../js/secondarypage.js"></script>
+	<script type="text/javascript" src = "../js/jquery.cookie.js"></script>
+</head>
+<body>
+	<div class="topNav">
+		<div class="topNavWrap">
+			<div class="topNavLeft1">
+				嗨购higou欢迎您！
+				<a href="login.html" class="login">登陆</a>
+				<span class="sep">|</span>
+				<a href="#">免费注册</a>
+			</div>
+			<div class="topNavLeft2">
+				<a href="#" class="app">
+					<i class="iconfont icon-shouji">&nbsp;</i>
+					手机嗨购
+					<span class="QRcode">
+						<img src="../img/homeimages/QRlogo.jpg">
+						<p class="text">APP首单立减8元</p>
+					</span>
+				</a>
+			</div>
+			<div class="topNavRight">
+				<ul>
+					<li>
+						<a href="login.html">我的订单</a>
+						<span class="sep">|</span>
+					</li>
+					<li class="dropmenupersonal">
+						<div class="mcDropmenBox" id="mcDropmenBox">
+							<a href="#">个人中心</a>
+							<i class="iconfont icon-arrLeft-fill" id="fontsize"></i>
+							<span class="sep">|</span>
+							<div class="mcDropmenu" id = "mcDropmenu">
+								<ul>
+									<li>
+										<a href="#">我的优惠券</a>
+									</li>
+									<li>
+										<a href="#">我的积分</a>	
+									</li>
+									<li>
+										<a href="#">账户安全</a>	
+									</li>
+									<li class="last">
+										<a href="#">我收藏的商品</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="dropmenuservice">
+						<div class="Dropmenuservice" id = "Dropmenuservice">
+							<a href="#">客户服务</a>
+							<i class="iconfont icon-arrLeft-fill" id="fontsize"></i>
+							<span class="sep">|</span>
+							<div class="Dropmenuservicemenu" id="Dropmenuservicemenu">
+								<ul>
+									<li class="relation">
+										<em class="iconfont icon-icon-test"></em>
+										<a href="#">联系客服</a>
+									</li>
+									<li class="help">
+										<em class="iconfont icon-bangzhuzhongxin"></em>
+										<a href="#">帮助中心</a>
+									</li>
+									
+								</ul>
+							</div>
+						</div>						
+					</li>
+					<li>
+						<a href="#">消费者告知书</a>
+						<span class="sep">|</span>
+					</li>
+					<li class="dropmenumore">
+						<div class="Dropmenumore" id="Dropmenumore">
+							<a href="#">更多</a>
+							<i class="iconfont icon-arrLeft-fill" id="fontsize"></i>
+							<div class="more" id="more">
+								<ul id="ul1">
+									<li class="first">
+										<a href="#">收藏本站</a>
+									</li>
+									<li>
+										<a href="#">新浪微博</a>
+										<span>
+											<img src="../img/homeimages/QRcode1.jpg">
+										</span>
+									</li>
+									<li>
+										<a href="#">微信公众号</a>
+										<span>
+											<img src="../img/homeimages/QRcode2.jpg">
+										</span>
+									</li>
+									<li>
+										<a href="#">higoucc公众号</a>
+										<span>
+											<img src="../img/homeimages/QRcode3.jpg">
+										</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						
+					</li>
+				</ul>
+			</div>
+		</div>		
+	</div>
+	<div class="headerCtner">
+		<div class="header">
+			<div class="wraper">
+				<a href="#" class="logo">
+					<img src="../img/homeimages/logo.gif" />
+					
+				</a>
+
+				<div class="searchbar">
+					<div class="inner">
+						<div class="form">
+							<form id="searchForm">
+								<div class="wrap">
+									<input type="text" value="营养辅食" />
+									<p></p>
+								</div>
+								<a href="#" id="btn">
+									<i class="iconfont icon-iconfont-iconfangdajing" id="font"></i>
+								</a>
+								
+							</form>
+						</div>
+					</div>
+					<span class="hot">
+						<a href="#" class="showcolor">
+							花王
+							<span class="sep">|</span>
+						</a>
+						<a href="#">
+							卫生巾
+							<span class="sep">|</span>
+						</a>
+						<a href="#">
+							牛奶
+							<span class="sep">|</span>
+						</a>
+						<a href="#">
+							moony
+							<span class="sep">|</span>
+						</a>
+					</span>
+				</div>
+				<div class="shopcar">
+					<a href="shopcar.html" target="_blank">
+						<i class="iconfont icon-gouwuche"></i>
+						购物车
+						<em class="num">0</em>
+					</a>
+				</div>
+			</div>
+		</div>
+		<img src="../img/homeimages/fixed_logo.gif" id="fixed">
+		<div id="topTopBox">
+			<div id="topTab" class="clearFix">
+				<div class="wrapClearFix" id="wrapClearFix">
+					<ul id="funcTab">
+						<li class="navitm active">
+							<a href="#" class="toplevel">首页</a>
+						</li>
+						<li class="navitm" id="momBaby">
+							<a href="#" class="toplevel mom" >母婴专区</a>
+							<div id="nav_menu" style="display:none">
+								<div id="left">
+									<ul></ul>
+								</div>
+								<div id="right">
+									<div class="bestseller"></div>
+									<div class="prefecture"></div>
+								</div>
+							</div>
+						</li>
+						<li class="navitm" id="makeup">
+							<a href="#" class="toplevel">个护彩妆</a>
+							<div id="nav_Makeup" style="display:none">
+								<div class="left">
+									<ul></ul>
+								</div>
+								<div class="right">
+									<div class="bestseller"></div>
+									<div class="prefecture"></div>
+								</div>
+							</div>
+						</li>
+						<li class="navitm" id="HOME">
+							<a href="#" class="toplevel">家居生活</a>
+							<div id="nav_Home" style="display:none">
+								<div class="left">
+									<ul></ul>
+								</div>
+								<div class="right">
+									<div class="bestseller"></div>
+									<div class="prefecture"></div>
+								</div>
+							</div>
+						</li>
+						<li class="navitm" id="Health">
+							<a href="#" class="toplevel">营养保健</a>
+							<div id="nav_Health" style="display:none" >
+								<div class="left">
+									<ul></ul>
+								</div>
+								<div class="right">
+									<div class="bestseller"></div>
+									<div class="prefecture"></div>
+								</div>
+							</div>
+						</li>
+						<li class="navitm" id="round">
+							<a href="#">环球美食</a>
+							<div id="nav_Round" style="display:none" >
+								<div class="left">
+									<ul></ul>
+								</div>
+								<div class="right">
+									<div class="bestseller"></div>
+									<div class="prefecture"></div>
+								</div>
+							</div>
+						</li>
+						<li class="navitm" id="costume">
+							<a href="#" class="toplevel">服饰鞋包</a>
+							<div id="nav_Costume" style="display:none" >
+								<div class="left">
+									<ul></ul>
+								</div>
+								<div class="right">
+									<div class="bestseller"></div>
+									<div class="prefecture"></div>
+								</div>
+							</div>
+						</li>
+						<li class="navitm" id="Appliances">
+							<a href="#" class="toplevel">数码家电</a>
+							<div id="nav_Appliances" style="display:none" >
+								<div class="left">
+									<ul></ul>
+								</div>
+								<div class="right">
+									<div class="bestseller"></div>
+									<div class="prefecture"></div>
+								</div>
+							</div>
+						</li>
+						<li class="navitm" id="Overseas">
+							<a href="#" class="toplevel">海外直邮</a>
+							<div id="nav_Overseas" style="display:none" >
+								<div class="left">
+									<ul></ul>
+								</div>
+								<div class="right">
+									<div class="bestseller"></div>
+									<div class="prefecture"></div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bg">
+		<ul id="oUl">
+			<li class="one"></li>
+			<li class="two"></li>
+			<li class="three"></li>
+			<li class="four"></li>
+			<li class="five"></li>
+		</ul>
+		<div class="circle" id="circle">
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+		</div>
+		<!-- <a href="#" class="pre" id="pre"></a>
+		<a href="#" class="next" id="next"></a> -->
+	</div>
+	<div class="wrap">
+		<div class="layout">
+			<ul>
+				<li>
+					<a href="communal.html" target="_blank">
+						<img src="../img/secondarypage/one.jpg" />
+					</a>
+				</li>
+				<li>
+					<a href="communal.html" target="_blank">
+						<img src="../img/secondarypage/two.jpg" />
+					</a>
+				</li>
+				<li>
+					<a href="communal.html" target="_blank">
+						<img src="../img/secondarypage/three.jpg" />
+					</a>
+				</li>
+				<li>
+					<a href="communal.html" target="_blank">
+						<img src="../img/secondarypage/four.jpg" />
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="hot" id="hot">
+			<div class="top">
+				<h2>爆款</h2>
+				<span>全球热销，海淘必败</span>
+			</div>
+			<ul></ul>
+		</div>
+		<div class="new" id="new">
+			<div class="top">
+				<h2>新品</h2>
+				<span>海外新品，模板堂速递</span>
+			</div>
+			<ul></ul>
+		</div>
+		<div class="milk" id="milk">
+			<div class="top">
+				<h2>大牌奶粉</h2>
+				<span>100%圆罐原装进口</span>
+				<a href="communal.html" target="_blank">
+				查看更多
+				<i>>></i>
+				</a>
+			</div>
+			<ul></ul>
+		</div>
+		<div class="wet" id="wet">
+			<div class="top">
+				<h2>尿裤湿巾</h2>
+				<a href="communal.html" target="_blank">
+				查看更多
+				<i>>></i>
+				</a>
+			</div>
+			<ul></ul>
+		</div>
+		<div class="lactation" id="lactation">
+			<div class="top">
+				<h2>哺乳喂养</h2>
+				<a href="communal.html" target="_blank">
+				查看更多
+				<i>>></i>
+				</a>
+			</div>
+			<ul>
+				<li>
+					<div class="img">
+						<a href="communal.html" target="_blank">
+							<img src="../img/secondarypage/tableware.gif">
+						</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="clear" id="clear">
+			<div class="top">
+				<h2>护洗清洁</h2>
+				<a href="communal.html" target="_blank">
+				查看更多
+				<i>>></i>
+				</a>
+			</div>
+			<ul>
+				<li>
+					<div class="img">
+						<a href="communal.html" target="_blank">
+							<img src="../img/secondarypage/nourishment.gif">
+						</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="overlay" style="margin:0px; padding:0px;border:none;width:100%;height:100%;background:rgb(51, 51, 51);opacity:0.6;z-index:9999;position:fixed;top:0px;left:0px;"></div>
+	<div class="easyDialogBox" style="margin:-95.5px 0px 0px -243px;padding:0px;border:none;z-index:10000;position:fixed;top:50%;left:50%;display:block;">
+		<div class="add_ok" id="cart_show" style="margin:0px;">
+			<div class="tip">
+				<i class="iconfont"></i>商品已成功加入购物车
+			</div>
+			<div class="go">
+				<a href="#" class="back"><<继续购物</a>
+				<a href="shopcar.html" class="btn-cssl">去结算</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="docfoot">
+		<div class="footWrap">
+			<div id="btmList">
+				<ul>
+					<li>
+						<i class="one"></i>
+						<p>100%正品</p>
+						<span>全球精选 正品保证</span>
+					</li>
+					<li>
+						<i class="two"></i>
+						<p>100%正品</p>
+						<span>全球精选 正品保证</span>
+					</li>
+					<li>
+						<i class="three"></i>
+						<p>100%正品</p>
+						<span>全球精选 正品保证</span>
+					</li>
+					<li>
+						<i class="four"></i>
+						<p>100%正品</p>
+						<span>全球精选 正品保证</span>
+					</li>
+				</ul>
+			</div>
+			<div id="guideList">
+				<ul>
+					<li class="first">
+						<a href="http://www.higou.cc/">
+							<img src="../img/homeimages/logo.gif" width="194">
+						</a>
+						<div class="focuson">
+							<span>关注我们</span>
+							<a href="http://weibo.com/i/2622417754" target="_blank" class="backg1"></a>
+							<a href="#" target="_blank" class="backg2"></a>
+							<a href="#" target="_blank" class="backg3"></a>
+						</div>
+					</li>
+					<li>
+						<dl>
+							<dt>新手上路</dt>
+							<dd>
+								<a href="#">售后流程</a>
+							</dd>
+							<dd>
+								<a href="#">购物流程</a>
+							</dd>
+							<dd>
+								<a href="#">订购方式</a>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>手机常识</dt>
+							<dd>
+								<a href="#">如何分辨原装电池</a>
+							</dd>
+							<dd>
+								<a href="#">如何分辨水货手机</a>
+							</dd>
+							<dd>
+								<a href="#">如何享受全国联保</a>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>配送与支付</dt>
+							<dd>
+								<a href="#">货到付款区域</a>
+							</dd>
+							<dd>
+								<a href="#">配送支付</a>
+							</dd>
+							<dd>
+								<a href="#">支付方式说明</a>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>会员中心</dt>
+							<dd>
+								<a href="#">资金管理</a>
+							</dd>
+							<dd>
+								<a href="#">我的收藏</a>
+							</dd>
+							<dd>
+								<a href="#">我的订单</a>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>服务保证</dt>
+							<dd>
+								<a href="#">退换货原则</a>
+							</dd>
+							<dd>
+								<a href="#">售后服务保证</a>
+							</dd>
+							<dd>
+								<a href="#">产品质量保证</a>
+							</dd>
+						</dl>
+					</li>
+					<li class="item">
+						<a href="#">
+							<img src="../img/homeimages/icon.jpg" width="108px" height="108px"> 
+							<span>higou.cc</span>
+						</a>
+					</li>
+					<li class="item">
+						<a href="#">
+							<img src="../img/homeimages/QRlogo.jpg" width="108px" height="108px"> 
+							<span>扫描下载手机版</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="WRAP">
+			<div class="aboutNEST">
+				<a href="#" target="_blank">免责条款</a>
+				<em> - </em>
+				<a href="#" target="_blank">隐私保护</a>
+				<em> - </em>
+				<a href="#" target="_blank">咨询热线</a>
+				<em> - </em>
+				<a href="#" target="_blank">联系我们</a>
+				<em> - </em>
+				<a href="#" target="_blank">公司简介</a>
+				<em> - </em>
+				<a href="#" target="_blank">批发方案</a>
+				<em> - </em>
+				<a href="#" target="_blank">配送方式</a>
+				<br />
+				<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010002000066" target="_blank">
+					<img src="../img/homeimages/smallicon.jpg">
+				</a>
+				<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010002000066" target="_blank">
+					<span style="margin: 0px 0px 0px 5px;">粤ICP备16033297号-2</span>
+				</a>
+				<span style="margin-left:20px;">&copy;2005-2017 嗨购 hihou 深圳达悦科技有限公司 版权所有，并保留所有权利。</span><br />
+				<a href="#" target="_blank" class="KXYZ">
+					<img src="../img/homeimages/icon1.png">
+				</a>
+				<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010002000066" target="_blank" class="shield">
+					<img src="../img/homeimages/samllicon.jpg">
+				</a>
+			</div>
+		</div>
+		<div class="floatFunc" id="floatFunc">
+			<a href="shopcar.html" target="_blank" id="shoppingcar">
+				<i id="CAR"></i><br />
+				<span class="Cart">购物车</span>
+			</a>
+			<a href="#" id="oIphone">
+				<i id="Iphone"></i><br />
+				<span class="Cart">APP</span>
+			</a>
+			<a href="#" id="GOTOP">
+				<i id="arrLeft"></i><br/>
+			</a>
+			<div class="CODE" id="CODE">
+				<img src="../img/homeimages/code1.png">	
+			</div>
+		</div>
+	</div>
+</body>
+</html>

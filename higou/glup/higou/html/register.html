@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src = "../js/jquery-1.11.1.js"></script>
+	<script type="text/javascript" src = "../js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src = "../js/register.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/register.css">
+</head>
+<body>
+	<div id="header">
+		<div class="wraper clearfix">
+			<h1 class="fl">
+				<a href="communal.html">
+					<img src="../img/login/logo.gif">
+				</a>
+			</h1>
+			<div class="fr">
+				<img src="../img/login/image.png">
+			</div>
+		</div>
+	</div>
+	<div id="main">
+		<span class="main_t_ty"></span>
+		<div class="wraper">
+			<div class="register_box clearfix">
+				<div class="user_main_box">
+					<div class="hd">
+						<ul>
+							<li class="on">手机号注册</li>
+						</ul>
+					</div>
+					<div class="bd">
+						<div class="bd_box">
+							<div class="main cls">
+								<div class="cls reg mt10">
+									<div class="left">
+										<div class="login-form reg-form" style="height:auto">
+											<div class="c">
+												<form method="post" name="formUser">
+													<input type="hidden" id="sendtype">
+													<ul>
+														<li class="inputli">
+															<label for="username" id="one">用户名</label>
+															<input type="text" name="username" id="username" class="intxt">
+															<p class="error" id="username_notice"></p>
+														</li>
+														<li class="inputli">
+															<label for="iPhone" id="two">手机号</label>
+															<input type="text" name="iPhone" id="iPhone" class="intxt">
+															<p class="error" id="iPhone_notice"></p>
+														</li>
+														<li class="inputli">
+															<label for="password" id="three">设置密码</label>
+															<input type="password" name="password" id="password" class="intxt">
+															<p class="error" id="password_notice"></p>
+														</li>
+														<li class="inputli">
+															<label for="conform_password" id="four">确认密码</label>
+															<input type="password" name="confirm_password" id="confirm_password" class="intxt">
+															<p class="error" id="conform_password_notice"></p>
+														</li>
+														<li class="inputli">
+															<label for="email"  id="five">您的邮箱</label>
+															<input type="text" name="email" id="email" class="intxt">
+															<p class="error" id="email_notice"></p>
+														</li>
+														<li class="inputsub">
+															<input type="hidden" name="act" value="act_register">
+															<input type="hidden" name="back_act">
+															<input name="Submit" type="submit" value="立即注册" class="btn_reg">
+														</li>
+														<li class="read-me cls mt10">
+															<label>
+																<input type="checkbox" name="agreement" value="1" checked="checked" tabindex="5" class="remember-me" style="margin-right:4px;">我已经看过并接受《<a href="#" target="_blank">用户协议</a>》
+															</label>
+														</li>
+													</ul>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tabbdad">
+					<div class="text">
+						<a href="#">已有账号？去登陆>></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<span class="main_b_ty"></span>
+	</div>
+	<div id="about">
+		<a href="#">
+		免责条款
+			<em>-</em>
+		</a>
+		<a href="#">
+		隐私保护
+			<em>-</em>
+		</a>
+		<a href="#">
+		咨询热线
+			<em>-</em>
+		</a>
+		<a href="#">
+		联系我们
+			<em>-</em>
+		</a>
+		<a href="#">
+		公司简介
+			<em>-</em>
+		</a>
+		<a href="#">
+		批发方案
+			<em>-</em>
+		</a>
+		<a href="#">
+		配送方式
+		</a>
+		<br />
+		<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010002000066">
+			<img src="../img/login/ga.png">
+		</a>
+		<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010002000066" target="_blank">
+			<span style="margin:0px 0px 0px 5px">粤ICP备16033297号-2</span>
+		</a>
+		<span class="m-license">&copy;嗨购 higou 深圳达悦科技有限公司 版权所有，并保留所有权限。</span>
+		<div class="f-tac">
+			<span id="KXYZ">
+				<a href="#" id="kx_verify" tabindex="1" target="_blank" style="display:inline-block">
+					<img src="../img/login/d720d83b55a04b6f932ea845c673c5bf.png" alt="可信网站">
+				</a>
+			</span>
+			<a class="u-shield" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010002000066" target="_blank">
+				<img src="../img/login/db9ba5060e9e49fabf3f6cc4b8b6ccf7.jpg" alt="工商营业执照网上标识">
+			</a>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+.docfoot{margin:80px 0 0;background: #fff;}
+.footWrap{background:#fff;border-top:1px solid #eaeaea;width: 1090px;margin:0 auto;}
+#btmList{padding:40px 0;border-bottom: 1px solid #eaeaea;overflow: hidden;}
+#btmList ul{clear: both;}
+#btmList ul li{width: 272px;float: left;color:#333;}
+#btmList ul li i{float: left;margin:0 12px 0 0;width:44px;height:44px;}
+#btmList ul li .one{background: url(../img/homeimages/icons.png) no-repeat -750px 0;}
+#btmList ul li .two{background: url(../img/homeimages/icons.png) no-repeat -812px 0;}
+#btmList ul li .three{background: url(../img/homeimages/icons.png) no-repeat -873px 0;}
+#btmList ul li .four{background: url(../img/homeimages/icons.png) no-repeat -935px 0;}
+#btmList p{font-size:18px;font-weight: bold;line-height: 22px;}
+#btmList span{display: block;font-size:14px;line-height: 22px;}
+#guideList{padding: 40px 0 60px;overflow: hidden;}
+#guideList a{font-size: 12px;color:#333;line-height: 24px;}
+#guideList a:hover{text-decoration: underline;}
+#guideList dl{font-size: 12px;}
+#guideList ul li{float: left;width: 110px;height:128px;padding:0 0 0 11px;border-left:1px solid #eaeaea;}
+#guideList ul li dt{margin: -4px 0 10px;}
+#guideList ul .first{width: 194px;padding-right:40px;padding-left:0;border: 0;}
+#guideList ul .first .focuson{height:32px;display: inline-block;vertical-align: middle;font-size: 12px;}
+#guideList ul .first .focuson span{height:32px;line-height: 32px;display: inline-block;float: left;}
+#guideList ul .first .focuson a{display: inline-block;width: 32px;height:32px;margin-left: 10px;float: left;}
+#guideList ul .first .focuson .backg1{background: url(../img/homeimages/icons.png) no-repeat -752px -69px;}
+#guideList ul .first .focuson .backg2{background: url(../img/homeimages/icons.png) no-repeat -796px -69px;}
+#guideList ul .first .focuson .backg3{background: url(../img/homeimages/icons.png) no-repeat -752px -69px;}
+#guideList ul .item{border:0;text-align: center;}
+#guideList ul .item a{line-height: 0;}
+
+.WRAP{width:100%;background:#333;}
+.WRAP img{display: inline-block;vertical-align: middle;}
+.aboutNEST{color:#c2c2c2; padding:20px 0;background:20px 0;line-height: 26px;text-align: center;font-size: 12px;}
+.aboutNEST em{font-weight: 500;font-style: normal;}
+.aboutNEST a{color: #c2c2c2;}
+.aboutNEST a:hover{text-decoration: underline;}
+.aboutNEST .KXYZ img{margin-top:5px;border-radius: 5px;width:80px;height:30px;}
+.aboutNEST .shield img{height:30px;margin:5px 0 0 10px;}
+
+.docfoot .floatFunc{position: fixed;top:666px;left:50%;width: 58px;border:1px solid #eaeaea;background:#fff;margin-left:565px;z-index: 9000;}
+.docfoot .floatFunc a{display: block;text-align:center;color:#333;background:#fff;height:58px;width: 58px;border-bottom: 1px solid #eaeaea;}
+.floatFunc a span{color:#333;font-size:12px;}
+.floatFunc a i{display: inline-block;width: 18px;height: 18px;margin-top: 10px;}
+#oIphone{border:0;}
+#GOTOP{height:36px;background:#999;border:0;}
+#arrLeft{background:url(../img/homeimages/float_wiget_icons.png) no-repeat;background-position: 0 -50px;}
+#Iphone{background:url(../img/homeimages/float_wiget_icons.png) no-repeat;background-position: 0 -25px;}
+#CAR{background:url(../img/homeimages/float_wiget_icons.png) no-repeat;background-position: 0 0;}
+.docfoot .floatFunc a:hover{background: #f2f2f2;}
+.docfoot .floatFunc a:hover span{color:#E31436;}
+#GOTOP:hover{background: #aaa;}
+.floatFunc .CODE{position: absolute;left: -118px;top:42px;opacity: 0;}
+.floatFunc .CODE img{border:0;}
+
+
+
+

@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="../css/detailpage.css" />
+	<link rel="stylesheet" type="text/css" href="../css/header.css" />
+	<link rel="stylesheet" type="text/css" href="../css/docfoot.css" />
+	<link rel="stylesheet" type="text/css" href="../icon-font/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="../icon-font/iconfont/iconfont.css">
+ 	<link rel="stylesheet" type="text/css" href="../icon-font/iconsousuo/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="../icon-font/iconfont2/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="../icon-font/iconfont3/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="../icon-font/iconfont4/iconfont.css">
+	<script type="text/javascript" src = "../js/jquery-1.11.1.js"></script>
+	<script type="text/javascript" src = "../js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src = "../js/detailpage.js"></script>
+	<script type="text/javascript" src = "../js/public.js"></script>
+	<script type="text/javascript" src = "../js/jquery.cookie.js"></script>
+</head>
+<body>
+	<div class="topNav">
+		<div class="topNavWrap">
+			<div class="topNavLeft1">
+				嗨购higou欢迎您！
+				<a href="login.html" class="login">登陆</a>
+				<span class="sep">|</span>
+				<a href="register.html">免费注册</a>
+			</div>
+			<div class="topNavLeft2">
+				<a href="#" class="app">
+					<i class="iconfont icon-shouji">&nbsp;</i>
+					手机嗨购
+					<span class="QRcode">
+						<img src="../img/homeimages/QRlogo.jpg">
+						<p class="text">APP首单立减8元</p>
+					</span>
+				</a>
+			</div>
+			<div class="topNavRight">
+				<ul>
+					<li>
+						<a href="login.html">我的订单</a>
+						<span class="sep">|</span>
+					</li>
+					<li class="dropmenupersonal">
+						<div class="mcDropmenBox" id="mcDropmenBox">
+							<a href="#">个人中心</a>
+							<i class="iconfont icon-arrLeft-fill" id="fontsize"></i>
+							<span class="sep">|</span>
+							<div class="mcDropmenu" id = "mcDropmenu">
+								<ul>
+									<li>
+										<a href="#">我的优惠券</a>
+									</li>
+									<li>
+										<a href="#">我的积分</a>	
+									</li>
+									<li>
+										<a href="#">账户安全</a>	
+									</li>
+									<li class="last">
+										<a href="#">我收藏的商品</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="dropmenuservice">
+						<div class="Dropmenuservice" id = "Dropmenuservice">
+							<a href="#">客户服务</a>
+							<i class="iconfont icon-arrLeft-fill" id="fontsize"></i>
+							<span class="sep">|</span>
+							<div class="Dropmenuservicemenu" id="Dropmenuservicemenu">
+								<ul>
+									<li class="relation">
+										<em class="iconfont icon-icon-test"></em>
+										<a href="#">联系客服</a>
+									</li>
+									<li class="help">
+										<em class="iconfont icon-bangzhuzhongxin"></em>
+										<a href="#">帮助中心</a>
+									</li>
+									
+								</ul>
+							</div>
+						</div>						
+					</li>
+					<li>
+						<a href="#">消费者告知书</a>
+						<span class="sep">|</span>
+					</li>
+					<li class="dropmenumore">
+						<div class="Dropmenumore" id="Dropmenumore">
+							<a href="#">更多</a>
+							<i class="iconfont icon-arrLeft-fill" id="fontsize"></i>
+							<div class="more" id="more">
+								<ul id="ul1">
+									<li class="first">
+										<a href="#">收藏本站</a>
+									</li>
+									<li>
+										<a href="#">新浪微博</a>
+										<span>
+											<img src="../img/homeimages/QRcode1.jpg">
+										</span>
+									</li>
+									<li>
+										<a href="#">微信公众号</a>
+										<span>
+											<img src="../img/homeimages/QRcode2.jpg">
+										</span>
+									</li>
+									<li>
+										<a href="#">higoucc公众号</a>
+										<span>
+											<img src="../img/homeimages/QRcode3.jpg">
+										</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						
+					</li>
+				</ul>
+			</div>
+		</div>		
+	</div>
+	<div class="headerCtner">
+		<div class="header">
+			<div class="wraper">
+				<a href="#" class="logo">
+					<img src="../img/homeimages/logo.gif" />
+					
+				</a>
+
+				<div class="searchbar">
+					<div class="inner">
+						<div class="form">
+							<form id="searchForm">
+								<div class="wrap">
+									<input type="text" value="营养辅食" />
+									<p></p>
+								</div>
+								<a href="#" id="btn">
+									<i class="iconfont icon-iconfont-iconfangdajing" id="font"></i>
+								</a>
+								
+							</form>
+						</div>
+					</div>
+					<span class="hot">
+						<a href="#" class="showcolor">
+							花王
+							<span class="sep">|</span>
+						</a>
+						<a href="#">
+							卫生巾
+							<span class="sep">|</span>
+						</a>
+						<a href="#">
+							牛奶
+							<span class="sep">|</span>
+						</a>
+						<a href="#">
+							moony
+							<span class="sep">|</span>
+						</a>
+					</span>
+				</div>
+				<div class="shopcar">
+					<a href="shopcar.html" target="_blank">
+						<i class="iconfont icon-gouwuche"></i>
+						购物车
+						<em class="num">0</em>
+					</a>
+				</div>
+			</div>
+		</div>
+		<img src="../img/homeimages/fixed_logo.gif" id="fixed">
+		<div id="topTopBox">
+			<div id="topTab" class="clearFix">
+				<div class="wrapClearFix" id="wrapClearFix">
+					<ul id="funcTab">
+						<li class="navitm ">
+							<a href="communal.html" class="toplevel">首页</a>
+						</li>
+						<li class="navitm active1" id="momBaby">
+							<a href="secondarypage.html" class="toplevel mom" target="_blank">母婴专区</a>
+							<div id="nav_menu" style="display:none">
+								<div id="left">
+									<ul></ul>
+								</div>
+								<div id="right">
+									<div class="bestseller"></div>
+									<div class="prefecture"></div>
+								</div>
+							</div>
+						</li>
+						<li class="navitm" id="makeup">
+							<a href="#" class="toplevel">个护彩妆</a>
+							<div id="nav_Makeup" style="display:none">
+								<div class="left">
+									<ul></ul>
+								</div>
+								<div class="right">
+									<div class="bestseller"></div>
+									<div class="prefecture"></div>
+								</div>
+							</div>
+						</li>
+						<li class="navitm" id="HOME">
+							<a href="#" class="toplevel">家居生活</a>
+							<div id="nav_Home" style="display:none">
+								<div class="left">
+									<ul></ul>
+								</div>
+								<div class="right">
+									<div class="bestseller"></div>
+									<div class="prefecture"></div>
+								</div>
+							</div>
+						</li>
+						<li class="navitm" id="Health">
+							<a href="#" class="toplevel">营养保健</a>
+							<div id="nav_Health" style="display:none" >
+								<div class="left">
+									<ul></ul>
+								</div>
+								<div class="right">
+									<div class="bestseller"></div>
+									<div class="prefecture"></div>
+								</div>
+							</div>
+						</li>
+						<li class="navitm" id="round">
+							<a href="#">环球美食</a>
+							<div id="nav_Round" style="display:none" >
+								<div class="left">
+									<ul></ul>
+								</div>
+								<div class="right">
+									<div class="bestseller"></div>
+									<div class="prefecture"></div>
+								</div>
+							</div>
+						</li>
+						<li class="navitm" id="costume">
+							<a href="#" class="toplevel">服饰鞋包</a>
+							<div id="nav_Costume" style="display:none" >
+								<div class="left">
+									<ul></ul>
+								</div>
+								<div class="right">
+									<div class="bestseller"></div>
+									<div class="prefecture"></div>
+								</div>
+							</div>
+						</li>
+						<li class="navitm" id="Appliances">
+							<a href="#" class="toplevel">数码家电</a>
+							<div id="nav_Appliances" style="display:none" >
+								<div class="left">
+									<ul></ul>
+								</div>
+								<div class="right">
+									<div class="bestseller"></div>
+									<div class="prefecture"></div>
+								</div>
+							</div>
+						</li>
+						<li class="navitm" id="Overseas">
+							<a href="#" class="toplevel">海外直邮</a>
+							<div id="nav_Overseas" style="display:none" >
+								<div class="left">
+									<ul></ul>
+								</div>
+								<div class="right">
+									<div class="bestseller"></div>
+									<div class="prefecture"></div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="main" id="main">
+		<div class="wraper">
+			<div class="top">
+				<a href="communal.css" target="_blank">首页</a>
+				<code>></code>
+				<a href="communal.css" target="_blank">母婴专区</a>
+				<code>></code>
+				<a href="communal.css" target="_blank">大牌奶粉</a>
+				<code>></code>
+				<a href="communal.css" target="_blank">1段</a>
+				<code>></code>
+				Aptamil 德国爱他美 婴儿奶粉 1段 800克
+			</div>
+			<div class="proinfo">
+				<div class="right_r">
+					<form method="post" id="formbuy">
+						<dl class="standout">
+							<dt class="p_tag">
+								<i class="crosstag tag">跨境</i>
+							</dt>
+							<dt class="goods_name">Aptamil 德国爱他美 婴儿奶粉 1段 800克</dt>
+							<dt class="sub_tit">源自然无污染的瑞士奶源，是欧洲妈妈喜欢的贴近母乳的奶粉。淡淡母乳般奶香宝宝喜爱，不易引起便秘，适合混合喂养或母乳过度到奶粉喂养的宝宝。</dt>
+							<dd class="price_wrap">
+								<div class="m_price">
+									<span class="price_title">售价</span>
+									<span class="current_price" id="SHOPPRICE">
+										<em>￥</em>139
+									</span>
+									<span class="discount" id="ZHEKOU">6.7折</span>
+									<span class="discount">包邮</span>
+									<span class="shop_price">参考价&nbsp;&nbsp;<em>￥</em>209</span>
+								</div>
+							</dd>
+							<dd class="taxrateline">
+								<span class="price_title">关税</span>
+								<span class="fz14 mr10">
+									本商品使用税率为11.9%
+									<a href="#" target="_blank">了解税率</a>
+								</span>
+							</dd>
+							<dd class="buy_box">
+								<span class="price_title">购买数量</span>
+								<div class="dd">
+									<span class="oprate mr5" id="skunum">
+										<a href="#" class="reduce inblock">-</a>
+										<input type="text" id="number" name="number" value="1"  class="intxt">
+										<a href="#" class="add inblock">+</a>
+									</span>
+								</div>
+								<div class="probtn">
+									<a href="#" class="inblock btn_addcart mr10 f1" id="1">加入购物车</a>
+									<a href="#" id="btnAddToWish" class="inblock btn_addfavor mr10 f1">加入收藏</a>
+								</div>
+							</dd>
+							<dd class="prompting">提示：本店不支持7天无理由退货</dd>
+							<dd class="m_comment_bar">
+								<span class="empty_star">
+									<img src="../img/detailpage/stars5.png">
+								</span>
+								<span class="good_percent">100%</span>
+								<span class="comnum comm">
+									<a href="#">0人</a>评价
+								</span>
+								<span class="comm_with_img comm">
+									<a href="#">0人</a>晒单
+								</span>
+							</dd>
+							<dd class="m_excel_comm">
+								<div class="bd">
+									<ul>
+										<li>
+											<p class="tit">匿名用户&nbsp;&nbsp;&nbsp;&nbsp;</p>
+											<p class="detail"></p>
+										</li>
+									</ul>
+								</div>
+								<div class="hd">
+									<a href="#" class="prev prevStop"></a>
+									<a href="#" class="next"></a>
+								</div>
+							</dd>
+						</dl>
+					</form>
+				</div>
+				<div class="left_l f1">
+					<div class="bigimg" id="bigimg">
+						<div class="mark_box" id="mark_box"></div>
+						<a href="../img/detailpage/img3.jpg" class="MagicZoomPlus" id="Zoomer">
+							<img src="../img/detailpage/img3.jpg" alt="Aptamil 德国爱他美 婴儿奶粉 1段 800克" width="400" height="400" style="opacity:1">
+						</a>
+						<div class="position_box" id="position_box"></div>
+					</div>
+					<div class="b_box" id="b_box">
+						<div class="b_box_all" id="b_box_all">
+							<img src="../img/detailpage/img3.jpg" alt="Aptamil 德国爱他美 婴儿奶粉 1段 800克" width="400" height="400" style="opacity:1">
+						</div>
+					</div>
+					<div class="imgzoomlist mt10">
+						<div class="inner" style="position: relative; overflow: hidden; ">
+							<ul class="cls" style= "left:0px;">
+								<li>
+									<a href="../img/detailpage/img3.jpg" style="outline:none; display:inline-block;" class="current MagicThumb-swap">
+										<img src="../img/detailpage/img3.jpg">
+									</a>
+								</li> 
+							</ul>
+						</div>
+						<a href="#" class="abtn aleft prevStop">左移</a>
+						<a href="#" class="abtn aright">右移</a>
+					</div>
+				</div>
+			</div>
+			<div class="bdshar bdshar-button-style0-16" data-bd-bind ="1507453614821">
+				<a href="#" class="bds_more" data-cmd="more"></a>
+				<a href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http%3A%2F%2Fhigou.cc%2Fgoods.php%3Fid%3D12%230-qzone-1-2806-d020d2d2a4e8d1a374a433f596ad1440&title=Aptamil%20%E5%BE%B7%E5%9B%BD%E7%88%B1%E4%BB%96%E7%BE%8E%20%E5%A9%B4%E5%84%BF%E5%A5%B6%E7%B2%89%201%E6%AE%B5%20800%E5%85%8B_1%E6%AE%B5_%E5%A4%A7%E7%89%8C%E5%A5%B6%E7%B2%89_%E6%AF%8D%E5%A9%B4%E4%B8%93%E5%8C%BA_%E5%97%A8%E8%B4%AD%EF%BC%8Chigou.cc%EF%BC%8C%E4%B9%B0%E5%A5%BD%E8%B4%A7%EF%BC%8C%E5%8C%96%E5%A6%86%E5%93%81%EF%BC%8C%E6%89%8B%E6%9C%BA%EF%BC%8C%E6%99%BA%E8%83%BD%E6%89%8B%E8%A1%A8%EF%BC%8C%E8%A1%8C%E8%BD%A6%E8%AE%B0%E5%BD%95%E4%BB%AA%EF%BC%8C%E5%93%81%E8%B4%A8%E7%94%B7%E8%A3%85%EF%BC%8C%E6%97%B6%E5%B0%9A%E5%A5%B3%E8%A3%85%E4%BC%98%E5%93%81%E4%BD%8E%E4%BB%B7%EF%BC%8C%E5%97%A8%E8%B4%AD%E7%BD%91%EF%BC%8C30%E5%A4%A9%E6%97%A0%E6%9D%A1%E4%BB%B6%E9%80%80%E6%8D%A2%E8%B4%A7&desc=&summary=&site=" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间" target="_blank"></a>
+				<a href="http://service.weibo.com/share/share.php?url=http%3A%2F%2Fhigou.cc%2Fgoods.php%3Fid%3D12%230-tsina-1-23844-397232819ff9a47a7b7e80a40613cfe1&title=Aptamil%20%E5%BE%B7%E5%9B%BD%E7%88%B1%E4%BB%96%E7%BE%8E%20%E5%A9%B4%E5%84%BF%E5%A5%B6%E7%B2%89%201%E6%AE%B5%20800%E5%85%8B_1%E6%AE%B5_%E5%A4%A7%E7%89%8C%E5%A5%B6%E7%B2%89_%E6%AF%8D%E5%A9%B4%E4%B8%93%E5%8C%BA_%E5%97%A8%E8%B4%AD%EF%BC%8Chigou.cc%EF%BC%8C%E4%B9%B0%E5%A5%BD%E8%B4%A7%EF%BC%8C%E5%8C%96%E5%A6%86%E5%93%81%EF%BC%8C%E6%89%8B%E6%9C%BA%EF%BC%8C%E6%99%BA%E8%83%BD%E6%89%8B%E8%A1%A8%EF%BC%8C%E8%A1%8C%E8%BD%A6%E8%AE%B0%E5%BD%95%E4%BB%AA%EF%BC%8C%E5%93%81%E8%B4%A8%E7%94%B7%E8%A3%85%EF%BC%8C%E6%97%B6%E5%B0%9A%E5%A5%B3%E8%A3%85%E4%BC%98%E5%93%81%E4%BD%8E%E4%BB%B7%EF%BC%8C%E5%97%A8%E8%B4%AD%E7%BD%91%EF%BC%8C30%E5%A4%A9%E6%97%A0%E6%9D%A1%E4%BB%B6%E9%80%80%E6%8D%A2%E8%B4%A7&appkey=1343713053&searchPic=true" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博" target="_blank"></a>
+				<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信" id="weixin"></a>
+				<a href="http://share.v.t.qq.com/index.php?c=share&a=index&url=http%3A%2F%2Fhigou.cc%2Fgoods.php%3Fid%3D12%230-tqq-1-92471-89b7933b38b0586d98eb9d131fa70b46&title=Aptamil%20%E5%BE%B7%E5%9B%BD%E7%88%B1%E4%BB%96%E7%BE%8E%20%E5%A9%B4%E5%84%BF%E5%A5%B6%E7%B2%89%201%E6%AE%B5%20800%E5%85%8B_1%E6%AE%B5_%E5%A4%A7%E7%89%8C%E5%A5%B6%E7%B2%89_%E6%AF%8D%E5%A9%B4%E4%B8%93%E5%8C%BA_%E5%97%A8%E8%B4%AD%EF%BC%8Chigou.cc%EF%BC%8C%E4%B9%B0%E5%A5%BD%E8%B4%A7%EF%BC%8C%E5%8C%96%E5%A6%86%E5%93%81%EF%BC%8C%E6%89%8B%E6%9C%BA%EF%BC%8C%E6%99%BA%E8%83%BD%E6%89%8B%E8%A1%A8%EF%BC%8C%E8%A1%8C%E8%BD%A6%E8%AE%B0%E5%BD%95%E4%BB%AA%EF%BC%8C%E5%93%81%E8%B4%A8%E7%94%B7%E8%A3%85%EF%BC%8C%E6%97%B6%E5%B0%9A%E5%A5%B3%E8%A3%85%E4%BC%98%E5%93%81%E4%BD%8E%E4%BB%B7%EF%BC%8C%E5%97%A8%E8%B4%AD%E7%BD%91%EF%BC%8C30%E5%A4%A9%E6%97%A0%E6%9D%A1%E4%BB%B6%E9%80%80%E6%8D%A2%E8%B4%A7&appkey=801cf76d3cfc44ada52ec13114e84a96" target="_blank" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+			</div>
+			<div class="imgs" id="imgs">
+				<div id="BTN">x</div>
+				<img src="../img/detailpage/weixin.png">
+			</div>
+			<div class="blank20"></div>
+			<div class="blank20"></div>
+			<div class="cls">
+				<div class="col_213 fl">
+					<div class="sidebox sideboxC" id="sidebox">
+						<div class="tab tabA" id="tabA">
+							<a href="#"  class="now">
+								<span>相关分类</span>
+							</a>
+							<a href="#" class="">
+								<span>推荐品牌</span>
+							</a>
+							<b>/</b>
+						</div>
+						<div class="inner tabc" style="display:block">
+							<ul class="cls">
+								<li>
+									<a href="#">2段</a>
+								</li>
+								<li>
+									<a href="#">3段</a>
+								</li>
+								<li>
+									<a href="#">4段及以上</a>
+								</li>
+								<li>
+									<a href="#">爱他美</a>
+								</li>
+								<li>
+									<a href="#">牛栏</a>
+								</li>
+								<li>
+									<a href="#">Hero Baby</a>
+								</li>
+								<li>
+									<a href="#">喜宝</a>
+								</li>
+								<li>
+									<a href="#">美林</a>
+								</li>
+								<li>
+									<a href="#">特福芬</a>
+								</li>
+								<li>
+									<a href="#">惠氏</a>
+								</li>
+								<li>
+									<a href="#">雅培</a>
+								</li>
+								<li>
+									<a href="#">美赞臣</a>
+								</li>
+								<li>
+									<a href="#">美好人生</a>
+								</li>
+								<li>
+									<a href="#">5段</a>
+								</li>
+								<li>
+									<a href="#">6段</a>
+								</li>
+							</ul>
+						</div>
+						<div class="inner tabc" style="display:none">
+							<ul class="cls">
+								<li>
+									<a href="#">MeadJohnson 美赞臣</a>
+								</li>
+								<li>
+									<a href="#">Aptamil爱他美</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col_970 fr goods_detail_wrap">
+					<div class="p_nav" id="p_nav">
+						<ul>
+							<li class="item on">
+								商品详情
+								<i></i>
+							</li>
+							<li class="item">
+								用户评论
+								<span>0</span>
+								<i></i>
+							</li>
+						</ul>
+					</div>
+					<div class="p_con" id="p_con">
+						<div class="p_detail" id="p_detail">
+							<ul class="goods_parameter">
+								<li>产地：德国</li>
+							</ul>
+							<div class="desc_iframe">
+								<div class="m-faketips">
+									<div class="cont">
+										<p class="tit">假一赔十</p>
+										<p class="info">higou.cc每一件商品都通过严苛的品质把关，保障正品，保障品质。特推出“假一赔十”的正品保障政策，杜绝一切假货，让您无忧购物。</p>
+									</div>
+								</div>
+								<div class="m-textarea" id="m-textarea">
+									<div class="textareabox">
+										<p>
+											<img src="../img/detailpage/images1.jpg">&nbsp;&nbsp;&nbsp;
+										</p>
+										<p>
+											<img src="../img/detailpage/images2.jpg">&nbsp;&nbsp;&nbsp;
+										</p>
+										<p>
+											<img src="../img/detailpage/images3.jpg">&nbsp;&nbsp;&nbsp;
+										</p>
+										<p>
+											<img src="../img/detailpage/images4.jpg">&nbsp;&nbsp;&nbsp;
+										</p>
+										<p>
+											<img src="../img/detailpage/images5.jpg">&nbsp;&nbsp;&nbsp;
+										</p>
+										<p>
+											<img src="../img/detailpage/images6.jpg">&nbsp;&nbsp;&nbsp;
+										</p>
+										<p>
+											<img src="../img/detailpage/blank.gif">&nbsp;&nbsp;&nbsp;
+										</p>
+										<p>
+											<img src="../img/detailpage/blank.gif">&nbsp;&nbsp;&nbsp;
+										</p>
+										<p>
+											<img src="../img/detailpage/blank.gif">&nbsp;&nbsp;&nbsp;
+										</p>
+										<p>
+											<img src="../img/detailpage/blank.gif">&nbsp;&nbsp;&nbsp;
+										</p>
+										<p>
+											<img src="../img/detailpage/blank.gif">&nbsp;&nbsp;&nbsp;
+										</p>
+										<p>
+											<img src="../img/detailpage/images7.jpg">&nbsp;&nbsp;&nbsp;
+										</p>
+										<p>
+											<img src="../img/detailpage/images8.jpg">&nbsp;&nbsp;&nbsp;
+										</p>
+										<p>
+											<img src="../img/detailpage/images9.jpg">&nbsp;&nbsp;&nbsp;
+										</p>
+										<p>
+											<img src="../img/detailpage/images10.jpg">&nbsp;&nbsp;&nbsp;
+										</p>
+										<p>
+											<img src="../img/detailpage/images11.jpg">&nbsp;&nbsp;&nbsp;
+										</p>
+										<p>
+											<img src="../img/detailpage/images12.jpg">&nbsp;&nbsp;&nbsp;
+										</p>
+										<p>
+											<img src="../img/detailpage/images13.jpg">&nbsp;&nbsp;&nbsp;
+										</p>
+										<p>
+											<img src="../img/detailpage/images14.jpg">&nbsp;&nbsp;&nbsp;
+										</p>
+										<p>
+											<img src="../img/detailpage/images15.jpg">&nbsp;&nbsp;&nbsp;
+										</p>
+										<p>
+											<img src="../img/detailpage/images16.jpg">&nbsp;&nbsp;&nbsp;
+										</p>
+										<p>
+											<img src="../img/detailpage/images17.jpg">&nbsp;&nbsp;&nbsp;
+										</p>
+										<p>
+											<img src="../img/detailpage/images18.jpg">&nbsp;&nbsp;&nbsp;
+										</p>
+										<p>
+											<img src="../img/detailpage/images19.jpg">&nbsp;&nbsp;&nbsp;
+										</p>
+										<p>
+											<img src="../img/detailpage/images20.jpg">&nbsp;&nbsp;&nbsp;
+										</p>
+										<p>
+											<img src="../img/detailpage/images21.jpg">&nbsp;&nbsp;&nbsp;
+										</p>
+										<p>
+											<img src="../img/detailpage/images22.jpg">&nbsp;&nbsp;&nbsp;
+										</p>
+										<p>
+											<img src="../img/detailpage/images23.jpg">&nbsp;&nbsp;&nbsp;
+										</p>
+										<p>
+											<img src="../img/detailpage/images24.jpg">&nbsp;&nbsp;&nbsp;
+										</p>
+										<p>
+											<br />
+											&nbsp;&nbsp;&nbsp;
+										</p>
+									</div>
+								</div>
+								<p><br /></p>
+							</div>
+						</div>
+						<div class="p_detail commentinfo">
+							<div class="cmt_cont mt10" id="COMMENT">
+								<a id="tabc_cmt"></a>
+								<div class="xm-box1 goods_detail_box">
+									<div id="comment" class="m m2">
+										<div class="mc">
+											<div id="i-comment">
+												<div class="rate">
+													<strong>
+														100
+														<span>%好评</span>
+													</strong>
+													<div class="stars_box">
+														<img src="../img/detailpage/stars5.png">
+													</div>
+												</div>
+												<div class="percent">
+													<dl>
+														<dt>好评
+															<span>(100%)</span>
+														</dt>
+														<dd>
+															<div style="width:100%"></div>
+														</dd>
+													</dl>
+													<dl>
+														<dt>中评
+															<span>(0%)</span>
+														</dt>
+														<dd class="d1">
+															<div style="width:0%"></div>
+														</dd>
+													</dl>
+													<dl>
+														<dt>差评
+															<span>(0%)</span>
+														</dt>
+														<dd class="d1">
+															<div style="width:0%">
+														</dd>
+													</dl>
+												</div>
+												<div class="actor-new">
+													<dl>
+														<dd class="p-bfc"></dd>
+													</dl>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="slideTxtBox">
+										<div class="hd">
+											<ul>
+												<li class="on">
+													<a href="#">
+														全部评价
+														<em>(0)</em>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														好评
+														<em>(0)</em>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														中评
+														<em>(0)</em>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														差评
+														<em>(0)</em>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														有晒单
+														<em>(0)</em>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<div class="bd">
+											<div id="all_comment" class="m_aomment_item">
+												<div class="blank20"></div>
+												<div class="page catepro_pageNav pageNav tc" style="float:right;font-size:20px;line-height:30px;">
+													<a  class="pre preDisable" href="#">
+														<span>上一页</span>
+													</a>
+													<a class="curr">
+														<span>1</span>
+													</a>
+													<a href="#" class="next nextDisable">
+														<span>下一页</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="overlay" style="margin:0px; padding:0px;border:none;width:100%;height:100%;background:rgb(51, 51, 51);opacity:0.6;z-index:9999;position:fixed;top:0px;left:0px;"></div>
+	<div class="easyDialogBox" style="margin:-95.5px 0px 0px -243px;padding:0px;border:none;z-index:10000;position:fixed;top:50%;left:50%;display:block;">
+		<div class="add_ok" id="cart_show" style="margin:0px;">
+			<div class="tip">
+				<i class="iconfont"></i>商品已成功加入购物车
+			</div>
+			<div class="go">
+				<a href="#" class="back"><<继续购物</a>
+				<a href="shopcar.html" class="btn-cssl">去结算</a>
+			</div>
+		</div>
+	</div>
+	<div class="docfoot">
+		<div class="footWrap">
+			<div id="btmList">
+				<ul>
+					<li>
+						<i class="one"></i>
+						<p>100%正品</p>
+						<span>全球精选 正品保证</span>
+					</li>
+					<li>
+						<i class="two"></i>
+						<p>100%正品</p>
+						<span>全球精选 正品保证</span>
+					</li>
+					<li>
+						<i class="three"></i>
+						<p>100%正品</p>
+						<span>全球精选 正品保证</span>
+					</li>
+					<li>
+						<i class="four"></i>
+						<p>100%正品</p>
+						<span>全球精选 正品保证</span>
+					</li>
+				</ul>
+			</div>
+			<div id="guideList">
+				<ul>
+					<li class="first">
+						<a href="http://www.higou.cc/">
+							<img src="../img/homeimages/logo.gif" width="194">
+						</a>
+						<div class="focuson">
+							<span>关注我们</span>
+							<a href="http://weibo.com/i/2622417754" target="_blank" class="backg1"></a>
+							<a href="#" target="_blank" class="backg2"></a>
+							<a href="#" target="_blank" class="backg3"></a>
+						</div>
+					</li>
+					<li>
+						<dl>
+							<dt>新手上路</dt>
+							<dd>
+								<a href="#">售后流程</a>
+							</dd>
+							<dd>
+								<a href="#">购物流程</a>
+							</dd>
+							<dd>
+								<a href="#">订购方式</a>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>手机常识</dt>
+							<dd>
+								<a href="#">如何分辨原装电池</a>
+							</dd>
+							<dd>
+								<a href="#">如何分辨水货手机</a>
+							</dd>
+							<dd>
+								<a href="#">如何享受全国联保</a>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>配送与支付</dt>
+							<dd>
+								<a href="#">货到付款区域</a>
+							</dd>
+							<dd>
+								<a href="#">配送支付</a>
+							</dd>
+							<dd>
+								<a href="#">支付方式说明</a>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>会员中心</dt>
+							<dd>
+								<a href="#">资金管理</a>
+							</dd>
+							<dd>
+								<a href="#">我的收藏</a>
+							</dd>
+							<dd>
+								<a href="#">我的订单</a>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>服务保证</dt>
+							<dd>
+								<a href="#">退换货原则</a>
+							</dd>
+							<dd>
+								<a href="#">售后服务保证</a>
+							</dd>
+							<dd>
+								<a href="#">产品质量保证</a>
+							</dd>
+						</dl>
+					</li>
+					<li class="item">
+						<a href="#">
+							<img src="../img/homeimages/icon.jpg" width="108px" height="108px"> 
+							<span>higou.cc</span>
+						</a>
+					</li>
+					<li class="item">
+						<a href="#">
+							<img src="../img/homeimages/QRlogo.jpg" width="108px" height="108px"> 
+							<span>扫描下载手机版</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="WRAP">
+			<div class="aboutNEST">
+				<a href="#" target="_blank">免责条款</a>
+				<em> - </em>
+				<a href="#" target="_blank">隐私保护</a>
+				<em> - </em>
+				<a href="#" target="_blank">咨询热线</a>
+				<em> - </em>
+				<a href="#" target="_blank">联系我们</a>
+				<em> - </em>
+				<a href="#" target="_blank">公司简介</a>
+				<em> - </em>
+				<a href="#" target="_blank">批发方案</a>
+				<em> - </em>
+				<a href="#" target="_blank">配送方式</a>
+				<br />
+				<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010002000066" target="_blank">
+					<img src="../img/homeimages/smallicon.jpg">
+				</a>
+				<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010002000066" target="_blank">
+					<span style="margin: 0px 0px 0px 5px;">粤ICP备16033297号-2</span>
+				</a>
+				<span style="margin-left:20px;">&copy;2005-2017 嗨购 hihou 深圳达悦科技有限公司 版权所有，并保留所有权利。</span><br />
+				<a href="#" target="_blank" class="KXYZ">
+					<img src="../img/homeimages/icon1.png">
+				</a>
+				<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010002000066" target="_blank" class="shield">
+					<img src="../img/homeimages/samllicon.jpg">
+				</a>
+			</div>
+		</div>
+		<div class="floatFunc" id="floatFunc">
+			<a href="shopcar.html" target="_blank" id="shoppingcar">
+				<i id="CAR"></i><br />
+				<span class="Cart">购物车</span>
+			</a>
+			<a href="#" id="oIphone">
+				<i id="Iphone"></i><br />
+				<span class="Cart">APP</span>
+			</a>
+			<a href="#" id="GOTOP">
+				<i id="arrLeft"></i><br/>
+			</a>
+			<div class="CODE" id="CODE">
+				<img src="../img/homeimages/code1.png">	
+			</div>
+		</div>
+	</div>
+</body>
+</html>

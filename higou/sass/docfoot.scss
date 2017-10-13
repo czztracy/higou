@@ -1,0 +1,90 @@
+.docfoot{
+	margin:80px 0 0;background: #fff;
+	.floatFunc{
+		position: fixed;top:666px;left:50%;width: 58px;border:1px solid #eaeaea;background:#fff;margin-left:565px;z-index: 9000;
+		a{
+			display: block;text-align:center;color:#333;background:#fff;height:58px;width: 58px;border-bottom: 1px solid #eaeaea;
+			span{color:#333;font-size:12px;}
+			i{display: inline-block;width: 18px;height: 18px;margin-top: 10px;}
+			&:hover{
+				background: #f2f2f2;
+				span{color:#E31436;}
+			};
+		}
+		.CODE{
+			position: absolute;left: -118px;top:42px;opacity: 0;
+			img{border:0;}
+		}
+	}
+}
+.footWrap{background:#fff;border-top:1px solid #eaeaea;width: 1090px;margin:0 auto;}
+#btmList{
+	padding:40px 0;border-bottom: 1px solid #eaeaea;overflow: hidden;
+	ul{
+		clear: both;
+		li{
+			width: 272px;float: left;color:#333;
+			i{float: left;margin:0 12px 0 0;width:44px;height:44px;}
+			.one{background: url(../img/homeimages/icons.png) no-repeat -750px 0;}
+			.two{background: url(../img/homeimages/icons.png) no-repeat -812px 0;}
+			.three{background: url(../img/homeimages/icons.png) no-repeat -873px 0;}
+			.four{background: url(../img/homeimages/icons.png) no-repeat -935px 0;}
+		}
+	}
+	p{font-size:18px;font-weight: bold;line-height: 22px;}
+    span{display: block;font-size:14px;line-height: 22px;}
+}
+#guideList{
+	padding: 40px 0 60px;overflow: hidden;
+	a{
+		font-size: 12px;color:#333;line-height: 24px;
+		&:hover{text-decoration: underline;};
+	}
+	dl{font-size: 12px;}
+	ul{
+		li{
+			float: left;width: 110px;height:128px;padding:0 0 0 11px;border-left:1px solid #eaeaea;
+			dt{margin: -4px 0 10px;}
+		}
+		.first{
+			width: 194px;padding-right:40px;padding-left:0;border: 0;
+			.focuson{
+				height:32px;display: inline-block;vertical-align: middle;font-size: 12px;
+				span{height:32px;line-height: 32px;display: inline-block;float: left;}
+				a{display: inline-block;width: 32px;height:32px;margin-left: 10px;float: left;}
+				.backg1{background: url(../img/homeimages/icons.png) no-repeat -752px -69px;}
+				.backg2{background: url(../img/homeimages/icons.png) no-repeat -796px -69px;}
+				.backg3{background: url(../img/homeimages/icons.png) no-repeat -752px -69px;}
+			}
+		}
+		.item{
+			border:0;text-align: center;
+			a{line-height: 0;}
+		}
+	}	
+}
+
+.WRAP{
+	width:100%;background:#333;
+	img{display: inline-block;vertical-align: middle;}
+}
+
+.aboutNEST{
+	color:#c2c2c2; padding:20px 0;background:20px 0;line-height: 26px;text-align: center;font-size: 12px;
+	em{font-weight: 500;font-style: normal;}
+	a{
+		color: #c2c2c2;
+		&:hover{text-decoration: underline;};
+	}
+	.KXYZ img{margin-top:5px;border-radius: 5px;width:80px;height:30px;}
+	.shield img{height:30px;margin:5px 0 0 10px;}
+}
+
+#oIphone{border:0;}
+#GOTOP{
+	height:36px;background:#999;border:0;
+	&:hover{background: #aaa;};
+}
+#arrLeft{background:url(../img/homeimages/float_wiget_icons.png) no-repeat;background-position: 0 -50px;}
+#Iphone{background:url(../img/homeimages/float_wiget_icons.png) no-repeat;background-position: 0 -25px;}
+#CAR{background:url(../img/homeimages/float_wiget_icons.png) no-repeat;background-position: 0 0;}
